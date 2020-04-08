@@ -3,7 +3,7 @@ README
 This directory includes 
 - the course syllabus
 - a folder for online exercises and model answers
-- a folder for screencasts 
+- a folder for screencasts, with notes for what we need to talk about
 
 
 Todo list
