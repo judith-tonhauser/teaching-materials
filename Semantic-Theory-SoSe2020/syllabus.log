@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 APR 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 APR 2020 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,20 +91,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks18
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
-)
-Package graphics Info: Driver file: dvips.def on input line 96.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
-))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -325,44 +311,44 @@ LaTeX Warning: Unused global option(s):
 (./syllabus.aux)
 \openout1 = `syllabus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 52.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 52.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 44.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 44.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 52.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 44.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 52.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 44.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 52.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 44.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 52.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 44.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -401,20 +387,9 @@ File: ot1txr.fd 2000/12/15 v3.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-
-Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
-orted.
-
-)
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 52.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 44.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -422,82 +397,87 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count107
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (./syllabus.out) (./syllabus.out)
 \@outlinefile=\write3
 \openout3 = `syllabus.out'.
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 70.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 62.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 70.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 72.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 64.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 72.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 64.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 72.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 64.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1
+)
+Overfull \hbox (20.00987pt too wide) in alignment at lines 87--118
+ [] [] 
+ []
+
+[1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no ü in font txr!
 
-No file syllabus.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+[2] (./syllabus.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
  (./syllabus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
- )
-(\end occurred when \ifx on line 52 was incomplete) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+ ) 
 Here is how much of TeX's memory you used:
- 6460 strings out of 493014
- 93774 string characters out of 6133351
- 178650 words of memory out of 5000000
- 9921 multiletter control sequences out of 15000+600000
- 20620 words of font info for 56 fonts, out of 8000000 for 9000
+ 6212 strings out of 493014
+ 90295 string characters out of 6133351
+ 175638 words of memory out of 5000000
+ 9682 multiletter control sequences out of 15000+600000
+ 23137 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,32p,679b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/tex
-mf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/tx
-fonts/txtt.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on syllabus.pdf (2 pages, 56388 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/txfonts/txtt.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on syllabus.pdf (3 pages, 59742 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 68 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

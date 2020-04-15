@@ -1,0 +1,16 @@
+\newcommand{\noopsort}[1]{}\newcommand{\SortNoop}[1]{} \newcommand{\noop}[1]{}
+\begin{thebibliography}{2}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[Coppock and Champollion(2020)]{coppock-champollion}
+Coppock, Elizabeth and Lucas Champollion. 2020.
+\newblock {\em Invitation to formal semantics\/}.
+\newblock online publication, in progress.
+
+\bibitem[Kroeger(2018)]{kroeger2018}
+Kroeger, Paul~R. 2018.
+\newblock {\em Analyzing meaning: An introduction to semantics and
+  pragmatics\/}.
+\newblock Language Sciences Press.
+
+\end{thebibliography}
