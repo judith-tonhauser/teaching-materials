@@ -38,26 +38,24 @@ April 17 meeting:
 
 Semantic Theory
 1. Syllabus, course mechanics, how to succeed in this course
-2. Entailment, implicature, presupposition (chapter 1.1., also read 1.2)
-3. NPIs and sets (chapters 2.1-2.4)
-4. Relations and functions (chapter 2.5)
-5. Propositional logic (chapters 3.1-3.3)
-6. First-order logic I: predication (chapters 3.4-3.5)
-7. First-order logic II: syntax of quantification (chapter 3.6.1)
-8. First-order logic III: semantics of quantification (chapter 3.6.2)
-9.
-10. 
-11./12. tense and aspect Aktionsart
------
-9. Typed lambda calculus I (chapters 4.1-4.2)
-10. Typed lambda calculus II (chapters 4.1-4.2)
-11. Function application (chapters 5.1-5.2)
-12. Adjectives and relative clauses (chapters 6.2-6.3)
--------
-13. Quantifiers in subject position (chapters 7.1-7.2)
-14. Presuppositions (chapter 8)
+2. Entailment, implicature, presupposition (chapter 1.1)
+3. Truth conditions, proposition is set of possible worlds, models (1.2.1, 1.2.2)
+4. NPIs and sets (chapters 2.1-2.3) 
+5. NPI licensing (chapter 2.4)
+6. Relations and functions (chapter 2.5)
+7. Propositional logic: formulas, negation, conjunction, disjunction (chapters 3.1-3.2.2, Kroeger 2018: chapters 4.1-4.2)
+8. Propositional logic: conditionals, bi-conditionals (chapters 3.2.3, 3.2.4, 3.3)
+9. Conversational implicatures (Kroeger 2018: chapters 8.1-8.3)
+10. Natural language versus propositional logic (Kroeger 2018: chapter 9)
+?? First order logic: predication (chapters 3.4-3.5)
+?? First order logic: quantification (chapter 3.6)
+----
+?? Cover & Tonhauser for tense and aspect?
+11. 
+12. 
+Online final exam
 
---------
+-----
 
 - Quiz closes Tuesdays at 12noon, is available starting Thursday morning beforehand; Tuesday early afternoon for assessing 
 
