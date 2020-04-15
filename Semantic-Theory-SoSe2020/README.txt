@@ -33,25 +33,15 @@ Tuesday, April 28: quiz for ch 1.1 closes
 
 - ch1.1: inferences, implication, implication versus implicature, question under discussion, three types of meaning (entailment, presupposition, conversational implicature), three tests/diagnostics (defeasibility test: entailment/ps versus implicature; reinforcement test: entailment/ps versus implicature; projection), what does it mean to "cancel" a meaning?, for defeasibility test: contrary versus contradiction, what does & mean?, Figure 1.1
 
--------
-
-
-Task in each week:
-
-1. create exercise and model answer key (EV takes lead in odd weeks, JT in even weeks; finalize on late T or early W)
-2. create online exercise (EV on W)
-3. reading issues to be addressed in screencast (EV sends JT input via email by T evening)
-6. monitor ILIAS forum for the week (EV)
-5. assess student problems based on quiz and forum (EV takes lead in odd weeks, JT in even weeks)
-
-
 NEW SCHEDULE (T 11:30-1, 2-3:30)
 Tuesdays: 
 	- 12noon: quiz closes for students
-	- 12-3:30: EV and JT assess student learning (quiz, forum) and respond
+	- 12-3:30: 
+		- assess student learning: quiz JT, forum EV
+		- respond to students; lead: EV odd weeks, JT even weeks
 Wednesday:
-	- questions and model answers (latex, PDF)
-	- create quiz
+	- create questions and model answers (latex, PDF); lead: EV odd weeks, JT even weeks
+	- create online quiz (EV)
 Thursday:
 	- 10am: quiz goes live
 
