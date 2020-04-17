@@ -41,7 +41,7 @@ Tuesdays:
 		- respond to students; lead: EV odd weeks, JT even weeks
 Wednesday:
 	- create questions and model answers (latex, PDF); lead: EV odd weeks, JT even weeks
-	- create online quiz (EV)
+	- create and post online quiz (EV)
 Thursday:
 	- 10am: quiz goes live
 
