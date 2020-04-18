@@ -22,21 +22,32 @@ Points: 1 point for each matching pair
 
 4) Single choice
 Question: How many textbooks are assigned for the course?
-Answers: 1 (-1 checked / 1 unchecked), 2 (1 checked / -1 unchecked), 3 (-1 checked / 1 unchecked)
+Answers: 1 (0 checked), 2 (1 checked), 3 (0 checked)
 
 5) Multiple choice
-Question: What's the relevance of this course for your study program?
+Question: What's the relevance of this course for English study programs?
 Answers: 
-- People use language to convey meaning, so semantics and pragmatics are fundamental linguistic sub-disciplines.  (1 checked / -1 unchecked)
-- The more one knows about English, including it semantics and pragmatics, the better one can teach English to others. (1 checked / -1 unchecked)
-- Understanding how meaning arises in natural language can improve one's own command of the language in speaking, reading and writing. (1 checked / -1 unchecked)
+- Linguistics is part of my study program. Semantics and pragmatics are fundamental linguistic sub-disciplines because people primarily use language to convey meaning.  (1 checked / -1 unchecked)
+- The more one knows about English, including its semantics and pragmatics, the better one can teach English to others. (1 checked / -1 unchecked)
+- Understanding how meaning arises in natural language, including English, can improve one's own command of the language in speaking, reading and writing. (1 checked / -1 unchecked)
+
+- Do I have to buy both textbooks?
+- Is the final taking place in person or online?
+- When is the final? 
+- How long is the final?
+
+Draft introductory message for each quiz where we describe what is important
+
+Clarify that weekly quizzes are available for several days, but once they start, they only have 90 minutes to get them used to it for the final. This means: first study then test.
 
 Quiz settings to discuss:
-- Introductory remarks?
-- Availability: Limited availability period (checked), 20.4. 9am to 21.4. noon?
+
 - Administering the text: access. Starting time: 20.4. 9am. Finishing time: 21.4. noon?.
-- Limit Number of Test Passes: Maximum number of passes: 1 (?, more for weekly quizzes?)
-- Limit Duration of Test: 90 minutes for final, but entire period for weekly quizzes? or always set to 90 minutes, to get them used to the time but allow them to do multiple passes, so that they can see that if the know the stuff, they can easily do it in 90 minutes?
+
+- Limit Number of Test Passes: Maximum number of passes: 1 
+
+- Limit Duration of Test: 90 minutes for final and weekly quizzes
+
 - Show question title and points, yes?
 - Automatic saving: every 60 seconds?
 - Shuffle questions: will make collaborating on final more difficult, but do we want it for the weekly quizzes, where they might want to work together?
@@ -50,14 +61,6 @@ Chapter 1.1 quiz
 
 
 
-Todo list
-
-- move all of Elena's students into Judith's ILIAS course (Elena already has privileges); it needs to be my course because I have PH student
-
-- Elena: tell waitlist students (which?) to sign up for my course on c@mpus so that we have the same amount of students to grade
-
-BY APRIL 15: Semantic Theory A and B will be online and joint; send syllabus; give first info also (joint on ILIAS, separate on c@mpus and for purpose of pruefung)
-
 
 BY APRIL 23 (R)
 April 17 meeting:
@@ -65,7 +68,6 @@ April 17 meeting:
 - draft possible questions (in latex and answer key) for first reading (chapter 1.1)
 - put together exercise ch1.1
 
-THURSDAY OR FRIDAY THIS WEEK, TELL PEOPLE VIA ILIAS THAT CLASS IS STARTING NEXT WEEK and how
 
 class starts on T, April 21
 10am screencast about syllabus
