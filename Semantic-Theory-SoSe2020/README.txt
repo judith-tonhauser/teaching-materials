@@ -21,10 +21,15 @@ FOR EACH QUIZ:
 
 - clarify that weekly quizzes are available for several days, but once they start, they only have 90 minutes to get them used to it for the final. This means: first study then test.
 
+Quizzes: Overview of results
 
-- ch1.1: inferences, implication, implication versus implicature, question under discussion, three types of meaning (entailment, presupposition, conversational implicature), three tests/diagnostics (defeasibility test: entailment/ps versus implicature; reinforcement test: entailment/ps versus implicature; projection), what does it mean to "cancel" a meaning?, for defeasibility test: contrary versus contradiction, what does & mean?, Figure 1.1
+1. Syllabus quiz: 
+- 53 starts, 47 finished, 46 passed, average time: 4.5 minutes
+- everybody who answered the questions passed
+- question about relevance to study program only got 57%
+- defining semantics/pragmatics got 83%
 
-
+For questions with two answers (one correct), the overview makes it easy to see when they chose the wrong answer. For questions with more than two answers, we have to read each student's answers.
 
 
 
