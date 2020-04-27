@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 APR 2020 14:16
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.9.3)  24 APR 2020 13:13
+>>>>>>> 9105ccf599397fa2230de1d20bb2017c0ceb3964
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,3 +526,7 @@ PDF statistics:
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+<<<<<<< HEAD
+=======
+Output written on quiz-week2.dvi (9 pages, 39160 bytes).
+>>>>>>> 9105ccf599397fa2230de1d20bb2017c0ceb3964
