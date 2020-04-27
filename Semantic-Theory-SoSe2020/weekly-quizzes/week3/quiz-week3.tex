@@ -1,4 +1,7 @@
 \documentclass[a4,11pt]{article}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
 \usepackage{xcolor} %for color
 \usepackage[utf8]{inputenc}
 \usepackage{gb4e}
@@ -21,38 +24,141 @@
 
 \maketitle
 
-{\bf Introductory message:} This quiz covers the material in CC section 1.2. It is designed to assess your understanding of 
+
+{\bf Introductory message:} This quiz covers the material in CC sections 1.2.1 and 1.2.2. These sections introduce the concepts of truth-conditional and model-theoretic semantics. The quiz is designed to asses your understanding of the key notions discussed in the chapter. Section 1.2.1 focuses on the distinction between a truth value and truth conditions. Section 1.2.2 introduces the idea of possible worlds and models. The quiz is designed to assess your understanding of  
 
 
 \begin{enumerate}[leftmargin = 12pt]
 
-   \item {\bf Terminology: proposition}  What is the definition of a proposition in :
+  \item {\bf Terminology:}  In truth-conditional semantics, the meaning of a sentence is:
+         \begin{enumerate}[noitemsep]
+       \item its truth value (0pts) 
+        \item its truth conditions (1pt)
+   \end{enumerate}
+   
+ {\bf Model answer:} The correct answer is `its truth conditions' as per page 32.
+
+   \item {\bf Terminology: proposition}  What is the definition of a proposition introduced in this chapter? Proposition is ...
        \begin{enumerate}[noitemsep]
-       \item the set of possible worlds in which a sentence is true (1 pt) 
-        \item the meaning of a sentence(0 pts)
+       \item the set of possible worlds in which a sentence is true (1pt) 
+        \item the meaning of a sentence (0pts)
    \end{enumerate}
   
      {\bf Model answer:} The correct answer is `the set of possible worlds in which a sentence is true ' as per definition on p.34.
 
    \item {\bf Truth conditions:}   What are the truth conditions of the sentence \textit{Simon is a grad student}?
        \begin{enumerate}[noitemsep]
-       \item the set of all possible worlds in which Simon is a grad student (1 pt)
+       \item the set of all possible worlds in which Simon is a grad student (1pt)
         \item the actual world (0 pt)
     \end{enumerate}     
         
-          \item {\bf Terminology: a model:}   A model consists of
+          \item {\bf Models:}   A model consists of
        \begin{enumerate}[noitemsep]
-       \item a domain (1 pt)
-        \item interpretation (1 pt)
-            \end{enumerate}
+       \item a domain (1pt)
+        \item interpretation (1pt)
+        \item truth value (0pts)
+         \end{enumerate}
+            
+        {\bf Model answer:} The correct answers are domain and interpretation as per definition on p.35: `A domain and interpretation taken together are called a model.'
+            
+      
+      \item { \bf Distinguishing between truth conditions and truth values:} This chapter discusses the difference between truth conditions and truth values. Do you know the truth value or truth conditions for the sentence or both. Check which one you \textit{do know}.
+
+\begin{exe}
+\ex It was raining in Vilnius on April 25 1240.
+\end{exe}
+
+       \begin{enumerate}[noitemsep]
+       \item truth conditions (1pt)
+        \item truth value (0pts)
+        \item truth value and truth conditions (0pts)
+        \item neither (0pts)
+         \end{enumerate}
+
+{\bf Model answer:} The correct answer is `truth conditions'. You do not know what the weather was like on that day in Vilnius. There are no written historical records so you cannot find out the truth value of this sentence. Nonetheless you understand the meaning of the sentence. That is because you know its truth conditions. You know what the world would have to be like for this sentence to be true.   
+      
+      \item {\bf Models1:}  A proposition expressed by a sentence is the set pf possible worlds in which the sentence is true. What is the proposition of expressed by the sentence \textit{Dan saw a giraffe} given the four possible worlds?
+      
+
+
+
+\begin{multicols}{2}
+
+  \begin{tabular}{l  l l}
+  \textbf{w1} && \\
+    Dan saw a giraffe\tikzmark{a1}  &  & True\tikzmark{True1} \\
+    Beyonce is an astronaut\tikzmark{b1}  & &   \\
+   Mary likes Kyle\tikzmark{c1}  &  &  \\
+   Dan saw a possum\tikzmark{d1}  &  &  \tikzmark{False1}False  \\
+  \end{tabular}
+  \begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
+    \draw [->] ({pic cs:a1}) [bend left] to ({pic cs:False1});
+    \draw [->] ([yshift=.75pt]{pic cs:b1}) -- ({pic cs:False1});
+      \draw [->] ({pic cs:c1}) [bend left] to ({pic cs:True1});
+      \draw [->] ({pic cs:d1}) [bend left] to ({pic cs:True1});
+  \end{tikzpicture}   
+
+  
+    \begin{tabular}{l  l l}
+      \textbf{w2} && \\
+    Dan saw a giraffe\tikzmark{a2}  &  & True\tikzmark{True2} \\
+    Beyonce is an astronaut\tikzmark{b2}  & &   \\
+   Mary likes Kyle\tikzmark{c2}  &  &  \\
+   Dan saw a possum\tikzmark{d2}  &  &  \tikzmark{False2}False  \\
+  \end{tabular}
+  \begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
+    \draw [->] ({pic cs:a2}) [bend left] to ({pic cs:True2});
+    \draw [->] ([yshift=.75pt]{pic cs:b2}) -- ({pic cs:True2});
+      \draw [->] ({pic cs:c2}) [bend left] to ({pic cs:True2});
+      \draw [->] ({pic cs:d2}) [bend left] to ({pic cs:True2});
+  \end{tikzpicture}   
+  
+    \begin{tabular}{l  l l}
+          \textbf{w3} && \\
+    Dan saw a giraffe\tikzmark{a3}  &  & True\tikzmark{True3} \\
+    Beyonce is an astronaut\tikzmark{b3}  & &   \\
+   Mary likes Kyle\tikzmark{c3}  &  &  \\
+   Dan saw a possum\tikzmark{d3}  &  &  \tikzmark{False3}False  \\
+  \end{tabular}
+  \begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
+    \draw [->] ({pic cs:a3}) [bend left] to ({pic cs:False3});
+    \draw [->] ([yshift=.75pt]{pic cs:b3}) -- ({pic cs:False3});
+      \draw [->] ({pic cs:c3}) [bend left] to ({pic cs:False3});
+      \draw [->] ({pic cs:d3}) [bend left] to ({pic cs:False3});
+  \end{tikzpicture}   
+ 
+     \begin{tabular}{l  l l}
+      \textbf{w4} && \\
+    Dan saw a giraffe\tikzmark{a4}  &  & True\tikzmark{True4} \\
+    Beyonce is an astronaut\tikzmark{b4}  & &   \\
+   Mary likes Kyle\tikzmark{c4}  &  &  \\
+   Dan saw a possum\tikzmark{d4}  &  &  \tikzmark{False4}False  \\
+  \end{tabular}
+  \begin{tikzpicture}[overlay, remember picture, yshift=.25\baselineskip, shorten >=.5pt, shorten <=.5pt]
+    \draw [->] ({pic cs:a4}) [bend left] to ({pic cs:True4});
+    \draw [->] ([yshift=.75pt]{pic cs:b4}) -- ({pic cs:False4});
+      \draw [->] ({pic cs:c4}) [bend left] to ({pic cs:False4});
+      \draw [->] ({pic cs:d4}) [bend left] to ({pic cs:False4});
+  \end{tikzpicture}   
+  
+\end{multicols}
    
-          \item {\bf Terminology: analytic sentence:} Analytic sentences express 
-          
+       \begin{enumerate}[noitemsep]
+         \item w1, w2, w3, w4 (0pts)
+        \item w2, w4 (0pts)
+       \item w2, w3 (0pts)
+       \item  w2 (0pts)
+        \end{enumerate}
+   
+ {\bf Model answer:} The correct answer is `w2, w4'. The proposition expressed by a sentence is the set of possible worlds in which the sentence is true. The sentence \textit{Dan saw a possum} is true in worlds 2 and 4. The sentence \textit{Dan saw a possum} is false in worlds 1 and 3. Therefore, the proposition of  \textit{Dan saw a possum} is worlds 2 and 4.
+              
+
    
 
  
  \end{enumerate}
 
+        
 
 
 \end{document}
