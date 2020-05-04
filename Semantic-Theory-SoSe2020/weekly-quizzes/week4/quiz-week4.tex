@@ -1,0 +1,203 @@
+\documentclass[a4,11pt]{article}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage{xcolor} %for color
+\usepackage[utf8]{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+
+
+\setlength{\parindent}{0in}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+
+\title{Week 4: Quiz questions and model answers}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+{\bf Introductory message:} This quiz covers the material in CC sections 2.1-2.3. These sections begins the introduction to set theory; this is continued in a future week's reading and quiz. Set theory is one of the mathematical languages of central importance in characterizing natural language meaning. One of the phenomena whose analysis relies on set theoretic notions are negative polarity items, which are introduced in section 2.2 (and which will be the topic of next week's reading and quiz).
+
+% An expression licenses NPIs wherever it licenses downward entailments (p.62)
+
+% negative polarity items: defined as a word that is acceptable in a sentence with sentential negation but unacceptable in the positive variant
+% distribution of NPIs: need to be able to talk about environments where NPIs are acceptable, e.g.,:
+%	- argument of preposition
+%	- clause-mate to adverb, 
+%	- complement clause, 
+%	- restriction of quantifier, scope of quantifier
+
+% upward entailment, downward entailment
+% semantic value of the NP musician is the set of musicians
+% semantic value of the NP cellist ist the set of cellists
+% subset relation, downward entailment
+
+\begin{enumerate}[leftmargin = 12pt]
+
+\item {\bf Which of the following is correct?} Select the best answer.
+
+      \begin{enumerate}[noitemsep]
+        \item A set is an abstract collection of distinct objects, which are called the members of the set. (0pt)
+	\item A set is an abstract collection of distinct objects, which are called the elements of the set. (0pt)
+        \item Both of the above. (1pt)
+	\end{enumerate}
+	
+{\bf Model answer:} (c) is correct because `member' and `element' are interchangeable terms.
+
+\item {\bf Specifying a set:} How can one specify a set? Select all that are correct.
+
+      \begin{enumerate}[noitemsep]
+        \item the set consisting of even numbers between 1 and 5 (1pt checked / -1pt unchecked)
+	\item \{2, 4\} (1pt checked / -1pt unchecked)
+        \item \{ x $|$ x is an even number between 1 and 5\} (1pt checked / -1pt unchecked)
+	\end{enumerate}	
+
+{\bf Model answer:} All three are correct ways of specifying a set. Depending on the set, one of these notations may be more succinct than another.
+
+\item {\bf Set theory 1:} Select the true statements. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+      \begin{enumerate}[noitemsep]
+        \item $\{a\} = \{a, a\}$
+        \item $\{a\} = \{a, \{a\}\}$
+         \item $\{a\} = \{a, \emptyset\}$
+         \item $\{a, b, c\} = \{b, c, a\}$
+       \end{enumerate}
+
+ {\bf Model answer:} The true statements are (a) and (d): sets are collections of unique objects, so repeating an object or presenting the objects in a different order does not change the set. The statement in (b) is false because the element $a$ is not the same as the set $\{a\}$ (which is the set containing a). The statement in (c) is false because the set $\{a\}$ only has one member (namely $a$) whereas the set $\{a, \emptyset\}$ has two members, namely $a$ and the empty set.
+         
+\item {\bf Set theory 2:} Assume the sets in Exercise 4 on p.73. Select the true statements. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+      \begin{enumerate}[noitemsep]
+        \item $c \not\in B$
+        \item $c \not\in E$
+       \item $\{a,b\} \in G$
+        \item $|A| = 6$
+        \item $|E| = 3$
+        \item $|G| = 4$
+        \item $|B| = |G|$
+	\item $\emptyset \subseteq A$
+	\item $\emptyset \in A$
+	\item $\emptyset \subseteq F$
+	\item $B \subset E$
+	\item $C \subset G$
+         \end{enumerate}
+ 
+  {\bf Model answer:} The following statements are true: (a), (b), (c), (d), (e), (g), (h), (j) and (k).
+  
+(c) is true because $G$ has two members, namely the set $\{a,b\}$ and the set $\{c,2\}$.
+
+(h) is true because the empty set is a subset of every set. To see that, consider the definition of a subset. In order for set A to be a subset of set B, all elements of A have to be elements of B. For (h), this means that we need to check whether all the elements of the empty set are elements of A. Because the empty set does not have elements, this is trivially true.
+  
+The statement in (f) is false because the set $G$ has two members, namely the set $\{a,b\}$ and the set $\{c,2\}$.
+
+The statement in (i) is false because the empty set is not an element of $A$. (Remember: the empty set is a subset of every set but not necessarily an element of every set.)
+
+The statement in (l) is false because $C$ is an element of $G$, not a subset (or a proper subset).
+
+        
+\item {\bf Set theory 3:} Assume the sets in Exercise 4 on p.73. Select the true statements. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+      \begin{enumerate}[noitemsep]
+        \item $c \in A$
+        \item $c \in F$
+	\item $c \in E$
+	\item $\{c\} \in E$
+	\item $\{c\} \in C$
+	\item $B \subseteq A$
+	\item $D \subset A$
+	\item $A \subseteq C$
+	\item $D \subseteq E$
+	\item $F \subseteq A$
+	\item $E \subseteq F$
+	\item $B \in G$
+	\item $B \subseteq G$
+	\item $\{B\} \subseteq G$
+	\item $D \subseteq G$
+	\item $\{D\} \subseteq G$
+	\item $G \subseteq A$
+	\item $\{\{c\}\} \subseteq E$
+         \end{enumerate}
+         
+ {\bf Model answers:} The following statements are true: (a), (d), (f), (g), (j), (l), (n) and (r).
+ 
+The statement in (b) is false because the empty set does not have any elements.
+
+The statement in (c) is false because $c$ is an element of the set $\{c\}$ which is an element of $E$. So, $c$ itself is not an element of $E$.
+ 
+The statement in (e) is false because the set containing $c$ is not an element of $C$ (only $c$ is an element of $C$).
+
+The statement in (h) is false: $A$ is not a subset of $C$ because there are objects that are elements of $A$ but not elements of $C$.
+
+The statement in (i) is false: the object $c$ is an element of $D$ but not of $E$ (only $\{c\}$ is an element of $E$).
+
+The statement in (k) is false: $F$ has no elements, so $E$ cannot be a subset (which requires that all elements of $E$ are elements of $F$).
+
+The statement in (m) is false: $B$ is an element of $G$, but it is not the case that all of the elements of $B$ are also elements of $G$.
+
+The statement in (n) is true: the set containing $B$ as an element is a subset of $G$ because all the elements of $\{\{a,b\}\}$ (which is just the set $\{a,b\}$) are elements of $G$.
+
+The statements in (o) and (p) are false: $G$ has two elements, namely $\{a,b\}$ and $\{c,2\}$. So, the set $D$, with elements $b$ and $c$, is not a subset, nor is the set $\{D\}$.
+
+The statement in (q) is false because not all of the elements in $G$ are elements in $A$. For instance, the set $\{a,b\}$ is an element of $G$ but not an element of $A$.
+
+The statement in (r) is true because $\{\{c\}\}$ (the set containing the set containing $c$) is a subset of $E$. To see this, we have to show that all of the elements of $\{\{c\}\}$ are elements of $E$. The only element of $\{\{c\}\}$ is $\{c\}$ and this set is an element of $E$.
+ 
+ \item {\bf Set theory 4:} Assume the sets in Exercise 6 on p.74. Select the true statements.  (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+      \begin{enumerate}[noitemsep]
+        \item $B \cup C = \{2, a, b, c\} $
+        \item $A \cup B = A $
+	\item $A \cap B = \{c, 2, 3, 4\}$
+	\item $A \cap E = \{a, b\} $
+	\item $A - B = \{c, 2, 3, 4\} $
+	\item $E - F = \{a , b, \{c\}\}$
+         \end{enumerate}
+
+ {\bf Model answer:} The following statements are true: (a), (b), (d), (e) and (f).s
+ 
+ The statement in (c) is false: the intersection of $A$ and $B$ are all those objects that are in both $A$ and $B$, so the correct answer here is $\{a, b\}$.
+ 
+ The statement in (f) is correct: the relative complement of $E$ and $F$ are all those objects that are in $E$ that are not also in $F$. Because $F$ is the empty set, it has no elements, and so it is the case that all elements of $E$ are also in the relative complement of $E$ and the empty set.
+ 
+ \item {\bf Set theory 5:} Select the true statements.  (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+      \begin{enumerate}[noitemsep]
+        \item The set of white dogs is a proper subset of the set of dogs.
+        \item The set of cats is a superset of the set of mice.
+	\item The intersection of the set of cats with the set of dogs is empty.
+	\item The set of cats is a superset of the set of sleeping cats.
+	\item The union of the set of white cats and the set of non-white cats is the set of cats.
+	\item The intersection of the set of dogs and the set of black dogs is the set of black dogs.
+         \end{enumerate}
+
+ {\bf Model answer:} The following statements are true: (a), (c), (d), (e) and (f).
+ 
+ The statement in (b) is false: in order for it to be true, every mouse would have to be an element of the set of cats. 
+  
+  \item {\bf Identifying negative polarity items:} According to the textbook, a negative polarity item can be used in negative sentences but not all positive sentences (p.58). Thus, to identify an expression as a negative polarity item, we need a minimal pair like that in (1): (1a) is the negative sentence (which is acceptable) and (1b) is the minimally different positive variant (which is not acceptable). Given this, which of the following statements are true? Select all that apply.
+  
+         \begin{enumerate}[noitemsep]
+
+       \item The word ``yet' is a negative polarity item because the sentence ``I haven't eaten yet'' is acceptable and its positive variant  ``I have eaten yet'' is unacceptable. (1pt checked / -1pt unchecked)
+
+       \item The word ``today'' is a negative polarity item because the negative sentence ``I haven't eaten today'' is acceptable. (-1 checked / 1 point unchecked)
+              
+       \item The word ``totally'' is a negative polarity item because the negative sentence ``I am not totally hungry'' is acceptable and the positive sentence ``I am hungry a lot'' is acceptable. (-1 checked / 1 point unchecked)
+
+      \item The word ``quite'' is a negative polarity item because the sentence ``I am quite hungry'' is acceptable and the negative variant ``I am not quite hungry'' is unacceptable. (-1 checked / 1 point unchecked)
+      
+   \end{enumerate}
+   
+ {\bf Model answer:} The correct answer is (a): here, the negative sentence is acceptable and its positive variant is unacceptable, thereby identifying {\em yet} as a negative polarity item. To show that an expression is a negative polarity item, it is not sufficient to show that the negative sentence is acceptable: what is missing in (b) is evidence that the positive variant is unacceptable (which it is not, so {\em today} is not a negative polarity item). In (c), the positive sentence is not a variant of the negative sentence, i.e., the positive and the negative sentence do not form a minimal pair modulo the presence of negation. To show diagnose {\em totally}, we need to consider the sentence {\em I am totally hungry}, which is an acceptable thing to say, so {\em totally} is not a negative polarity item. The word {\em quite} is a positive polarity item: it is acceptable in the positive sentence and unacceptable in the negative variant. So it is not a negative polarity item.
+
+\end{enumerate}
+
+\end{document}
