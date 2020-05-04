@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.9.3)  29 APR 2020 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.9.3)  30 APR 2020 07:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -506,18 +506,14 @@ LaTeX Font Info:    ... okay on input line 23.
  ABD: EveryShipout initializing macros [1
 
 ] [2] [3] [4]
-[5] (./quiz-week3.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[5] (./quiz-week3.aux) ) 
 Here is how much of TeX's memory you used:
  11895 strings out of 492643
  238955 string characters out of 6129411
- 312409 words of memory out of 5000000
+ 312408 words of memory out of 5000000
  15585 multiletter control sequences out of 15000+600000
  9143 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,54p,631b,732s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on quiz-week3.dvi (5 pages, 36952 bytes).
+Output written on quiz-week3.dvi (5 pages, 37136 bytes).
