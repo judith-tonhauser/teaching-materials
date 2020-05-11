@@ -44,7 +44,7 @@
 
 \begin{enumerate}[leftmargin = 12pt]
 
-\item {\bf Eulid diagram} A  the set of dogs. B is the set of all entities that like Whiskas. Which sentence does the Eulid diagram capture?
+\item {\bf Eulid diagram 1} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Eulid diagram capture?
 
 \begin{tikzpicture}[fill=gray]
 % left hand
@@ -66,15 +66,44 @@
 \end{tikzpicture}
 
       \begin{enumerate}[noitemsep]
-        \item \textit{Some dogs likes Whiskas.} (1pt checked / -1pt unchecked)
+        \item \textit{Some dogs like Whiskas.} (-1pt checked / 1pt unchecked)
+	\item \textit{No dog likes Whiskas.} (1pt checked / -1pt unchecked)
+        \item \textit{Every dog likes Whiskas.} (-1pt checked / 1pt unchecked)
+	\end{enumerate}	
+
+{\bf Model answer:}  The correct answer is \textit{No dog likes Whiskas}, since the intersection between the set of dogs and the set of entities that like Whiskas is empty.
+
+\item {\bf Eulid diagram 2} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Eulid diagram capture?
+
+\begin{tikzpicture}[fill=gray]
+% left hand
+\scope
+\clip (-2,-2) rectangle (2,2)
+      (1,0) circle (1);
+\fill (0,0) circle (1);
+\endscope
+% right hand
+\scope
+\clip (-2,-2) rectangle (2,2)
+      (0,0) circle (1);
+\fill (1,0) circle (1);
+\endscope
+% outline
+\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+      (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+     (-2,-2) rectangle (3,2) node [text=black,above] {};
+\end{tikzpicture}
+
+      \begin{enumerate}[noitemsep]
+        \item \textit{Some dogs like Whiskas.} (1pt checked / -1pt unchecked)
 	\item \textit{No dog likes Whiskas.} (-1pt checked / 1pt unchecked)
         \item \textit{Every dog likes Whiskas.} (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:}  The correct answer is \textit{Some dogs likes Whiskas}, since the intersection between the set of dogs and the set of entities that like Whiskas is not empty.
+{\bf Model answer:}  The correct answer is \textit{Some dogs like Whiskas}, since the intersection between the set of dogs and the set of entities that like Whiskas is not empty.
 
 
-\item {\bf Sets 1} A  the set of dogs. B is the set of all entities that like Whiskas. Which formula captures the meaning of the sentence \textit{No dog likes Whiskas.}
+\item {\bf Sets 1} A  the set of dogs. B is the set of all entities that like Whiskas. Which set theoretic formula captures the meaning of the sentence \textit{No dog likes Whiskas.}
 
       \begin{enumerate}[noitemsep]
         \item A $\cap$ B = $\emptyset$ (1pt checked / -1pt unchecked)
@@ -85,7 +114,7 @@
 {\bf Model answer:}  The correct answer is  A $\cap$ B = $\emptyset$, since the intersection of dogs and likers of Whiskas is empty. 
 
 
-\item {\bf Sets 2} A  the set of parrots. B is the set of all entities that like to sing. Which formula captures the meaning of the sentence \textit{Every parrots likes singing.}
+\item {\bf Sets 2} A  the set of parrots. B is the set of all entities that like to sing. Which formula captures the meaning of the sentence \textit{Every parrot likes to sing.}
 
         \begin{enumerate}[noitemsep]
         \item A $\cap$ B = $\emptyset$ (1pt checked / -1pt unchecked)
@@ -93,14 +122,59 @@
         \item A $\subset$ B (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:}  The correct answer is  A $\subset$ B. Since every member of the set of parrots is a member of the set of entities who like singing.
+{\bf Model answer:}  The correct answer is  A $\subset$ B because every member of the set of parrots is a member of the set of entities who like to sing.
 
-\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given sentence \textit{Every human uses Twitter}, come up with a version of the sentence that shows that  \textit{every} is left downward monotone
+\item {\bf Sets 3}  A is a set of dogs. B is a set of all entities that like Whiskas. C is a set of snorers. The following sentences are true. 
+
+\begin{itemize}[noitemsep]
+\item No dog like Whiskas.
+\item Some dogs are snorers.
+\item Everyone who likes Whiskas is a snorer.
+\end{itemize}
+
+Select all true statements in set-theoretic notation. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+\begin{enumerate}
+\item A $\cap$ B $\neq$ $\emptyset$
+\item A $\cap$ B = $\emptyset$
+\item A $\cap$ C $\neq$ $\emptyset$
+\item A $\cap$ C = $\emptyset$
+\item A $\subseteq$ C 
+\item B $\subseteq$ C 
+\item C $\subseteq$ B
+\end{enumerate}
+
+{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{No dog like Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{Everyone who likes Whiskas is a snorer}.
+
+(a) is false, it would be true if some dogs liked Whiskas. (d) is false, it would be true if no dog snored. (e) is false, it would be true if all dogs were snorers. (g) is false, it would be true, if all snorers would be Whiskas-lovers.
+
+
+\item {\bf Sets 4}  A is a set of humans. B is a set of all entities that like pizza. C is a set of all entities that like breadsticks.  The following sentences are true. 
+
+\begin{itemize}[noitemsep]
+\item Every person likes pizza.
+\item Everyone who likes pizza likes breadsticks.
+\end{itemize}
+
+Select all true statements in set-theoretic notation. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+
+\begin{enumerate}
+\item A $\subseteq$ B
+\item A $\subseteq$ C
+\item B $\subseteq$ C
+\item B $\subseteq$ A
+\item C $\subseteq$ A
+\item C $\subseteq$ B
+\end{enumerate}
+
+{\bf Model answer:} The correct answers are (a), (b), (c). (a) and (c) correspond to the above given sentences. (b) is true because A is a subset of B and B is a subset of C, therefore A is a subset of C.
+
+\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, come up with a version of the sentence that shows that  \textit{every} is left downward monotone.
 	
 {\bf Model answer:} To show that an expression is left downward monotone, one needs to come up with a version of a sentence where human is substituted with a different expression that refers to subset of the set human, e.g. politician, woman, astronaut etc. If the entailment holds between two sentences, then  \textit{every} is left downward monotone.
 
 
-\item {\bf Monotonicity: No} The quantifier \textit{no} right downward monotone because the sentence \textit{No dog likes to sleep} entails:
+\item {\bf Monotonicity: No} The quantifier \textit{no} is right downward monotone because the sentence \textit{No dog likes to sleep} entails:
 
       \begin{enumerate}[noitemsep]
         \item \textit{No dog likes to sleep on the ground} (1pt checked / -1pt unchecked)
@@ -144,50 +218,55 @@
 
 {\bf Model answer:} The correct answer is left downward monotone. If \textit{All dogs love walks} is true, then it means that \textit{all chihuahuas love walks} is also true. Since chihuahuas is a subset of dogs, \textit{all} is left downward monotone. If \textit{All dogs love walks} is true, it does not entail that \textit{all dogs love walks in a park} is true. Some dogs might prefer walks in a city center. Therefore, \textit{all} is not right downward monotone.
 
-\item {\bf Sets: 3}  A is a set of dogs. B is a set of all entities that like Whiskas. C is a set of snorers. The following sentences are true. 
+\item {\bf Licensing of negative polarity items} According to Ladusaw 1980, in which linguistic environments are negative polarity items licensed, i.e., in which linguistic environments are they acceptable?  
 
-\begin{itemize}[noitemsep]
-\item No dog like Whiskas.
-\item Some dogs are snorers.
-\item Everyone who likes Whiskas is a snorer.
-\end{itemize}
+  \begin{enumerate}[noitemsep]
+        \item NPIs are acceptable in downward monotone environments. (1pt)
+        \item NPIs are acceptable in upward monotone environments. (0pts)
+	\end{enumerate}
 
-Select all true statements in set-theoretic notation. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
+{\bf Model answer:} As discussed on p.62, answer (a) is correct. The Fauconnier-Ladusaw generalization is that ``an expression licenses negative polarity items wherever it licenses downward entailments''.
 
-\begin{enumerate}
-\item A $\cap$ B $\neq$ $\emptyset$
-\item A $\cap$ B = $\emptyset$
-\item A $\cap$ C $\neq$ $\emptyset$
-\item A $\cap$ C = $\emptyset$
-\item A $\subseteq$ C 
-\item B $\subseteq$ C 
-\item C $\subseteq$ B
+\item {\bf Downward monotonicity} (question pool)
+
+\begin{enumerate}[noitemsep]
+
+\item Show that the argument of \textit{without} is a downward entailing environment. (In (4a), the determiner phrase \textit{any help} is the argument of \textit{without}.) (4 points; max. 550 characters)
+
+\item Show that the argument of \textit{hard} is a downward entailing environment. (In the sentence \textit{It is hard to buy a Mercedes}, the \textit{to}-infinitive \textit{to buy a Mercedes} is the argument of \textit{hard}.) (4 points; max. 550 characters)
+
 \end{enumerate}
 
-{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{No dog like Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{Everyone who likes Whiskas is a snorer}.
+{\bf Model answers:} 
 
-(a) is false, it would be true if some dogs liked Whiskas. (d) is false, it would be true if no dog snored. (e) is false, it would be true if all dogs were snorers. (g) is false, it would be true, if all snorers would be Whiskas-lovers.
+\begin{enumerate}[noitemsep]
 
+\item To show that the argument of \textit{without} is a downward entailing environment, consider the two sentences \textit{Kim runs without wolves} and \textit{Kim runs without animals}. These two sentences differ only on the argument of {\em without}: {\em animals} denotes a superset of {\em wolves}. Because \textit{Kim runs without animals} entails \textit{Kim runs without wolves}, the argument of \textit{without} is a downward entailing environment, i.e., the argument licenses entailments from supersets to subsets.  (1 point each for the two sentences, 1 point for statement about entailment relationship, 1 point for concluding statement)
 
-\item {\bf Sets: 3}  A is a set of humans. B is a set of all entities that like pizza. C is a set of all entities that like breadsticks.  The following sentences are true. 
+\item To show that the argument of \textit{hard} is a downward entailing environment, consider the two sentences {\em It is hard to run} and {\em It is hard to run fast}. These two sentences differ only on the argument of {\em hard}: the set denoted by {\em to run} is a superset of the set denoted by {\em to run fast}. Because {\em It is hard to run} entails {\em It is hard to run fast}, the argument of {\em hard} is a downward entailing environment, i.e., the argument licenses entailments from supersets to subsets. (1 point each for the two sentences, 1 point for statement about entailment relationship, 1 point for concluding statement)
 
-\begin{itemize}[noitemsep]
-\item Every person likes pizza.
-\item Everyone who likes pizza likes breadsticks.
-\end{itemize}
-
-Select all true statements in set-theoretic notation. (Grading: multiple choice; 1pt if correct, -1pt if incorrect)
-
-\begin{enumerate}
-\item A $\subseteq$ B
-\item A $\subseteq$ C
-\item B $\subseteq$ C
-\item B $\subseteq$ A
-\item C $\subseteq$ A
-\item C $\subseteq$ B
 \end{enumerate}
 
-{\bf Model answer:} The correct answers are (a), (b), (c). (a) and (c) correspond to the above given sentences. (b) is true because A is a subset of B and B is a subset of C, therefore A is a subset of C.
+\item {\bf Upward monotonicity} (question pool)
+
+\begin{enumerate}[noitemsep]
+
+\item Show that the argument of \textit{with} is an upward entailing environment. (In (4a), the determiner phrase \textit{any help} is the argument of \textit{with}.) (4 points; max. 550 characters)
+
+\item Show that the argument of \textit{easy} is an upward entailing environment. (In the sentence \textit{It is easy to buy a Mercedes}, the \textit{to}-infinitive \textit{to buy a Mercedes} is the argument of \textit{easy}.) (4 points; max. 550 characters)
+
+\end{enumerate}
+
+{\bf Model answers:} 
+
+\begin{enumerate}[noitemsep]
+
+\item To show that the argument of \textit{with} is an upward entailing environment, consider the two sentences \textit{Kim runs with wolves} and \textit{Kim runs with animals}. These two sentences differ only on the argument of {\em with}: {\em animals} denotes a superset of {\em wolves}. Because \textit{Kim runs with wolves} entails \textit{Kim runs with animals}, the argument of \textit{with} is an upward entailing environment, i.e., the argument licenses entailments from subsets to supersets. (1 point each for the two sentences, 1 point for statement about entailment relationship, 1 point for concluding statement)
+
+\item To show that the argument of \textit{easy} is an upward entailing environment, consider the two sentences {\em It is easy to run fast} and {\em It is easy to run}. These two sentences differ only on the argument of {\em easy}: the set denoted by {\em to run} is a superset of the set denoted by {\em to run fast}. Because {\em It is easy to run fast} entails {\em It is hard to run}, the argument of {\em easy} is an upward entailing environment, i.e., the argument licenses entailments from subsets to supersets. (1 point each for the two sentences, 1 point for statement about entailment relationship, 1 point for concluding statement)
+
+\end{enumerate}
+
 
 \end{enumerate}
 \end{document}
