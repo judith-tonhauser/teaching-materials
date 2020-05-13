@@ -123,7 +123,7 @@
 \item {\bf Sets 3}  A is a set of dogs. B is a set of all entities that like Whiskas. C is a set of snorers. The following sentences are true. 
 
 \begin{itemize}[noitemsep]
-\item No dog like Whiskas.
+\item No dog likes Whiskas.
 \item Some dogs are snorers.
 \item Everyone who likes Whiskas is a snorer.
 \end{itemize}
@@ -140,9 +140,12 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
 \item C $\subseteq$ B
 \end{enumerate}
 
-{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{No dog like Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{Everyone who likes Whiskas is a snorer}.
+{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{no dog likes Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{everyone who likes Whiskas is a snorer}.
 
-(a) is false, it would be true if some dogs liked Whiskas. (d) is false, it would be true if no dog snored. (e) is false, it would be true if all dogs were snorers. (g) is false, it would be true, if all snorers would be Whiskas-lovers.
+(a) is false, it would be true if some dogs liked Whiskas. 
+(d) is false, it would be true if no dog snored. 
+(e) is false, it would be true if every dogs were a snorer. 
+(g) is false, it would be true, if every snorer would like Whiskas.
 
 
 \item {\bf Sets 4}  A is a set of humans. B is a set of all entities that like pizza. C is a set of all entities that like breadsticks.  The following sentences are true. 
@@ -165,12 +168,14 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
 
 {\bf Model answer:} The correct answers are (a), (b), (c). (a) and (c) correspond to the above given sentences. (b) is true because A is a subset of B and B is a subset of C, therefore A is a subset of C.
 
-\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, come up with a version of the sentence that shows that  \textit{every} is left downward monotone.
+\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, write an argument that \textit{every} is left downward monotone. Make sure that your argument includes a relevant version of the sentence and explicit states how the two sentences show that \textit{every} is left downward monotone. (23points, max 250 characters)
 	
-{\bf Model answer:} To show that an expression is left downward monotone, one needs to come up with a version of a sentence where human is substituted with a different expression that refers to subset of the set human, e.g. politician, woman, astronaut etc. If the entailment holds between two sentences, then  \textit{every} is left downward monotone.
+{\bf Model answer:} Consider the sentence \textit{Every woman uses Twitter}, where \textit{human} has been replaced by an expression that denotes a subset of humans, namely \textit{woman}. Because \textit{Every human uses Twitter} entails \textit{Every woman uses Twitter}, \textit{every} is left downward monotone. (1 point for a correct version of the sentence, 1 point for statement about the entailment relationship, 1 point for the  )
 
+\item {\bf Monotonicity: No/Few/All} 
 
-\item {\bf Monotonicity: No} The quantifier \textit{no} is right downward monotone because the sentence \textit{No dog likes to sleep} entails:
+\begin{enumerate}
+\item The quantifier \textit{no} is right downward monotone because the sentence \textit{No dog likes to sleep} entails:
 
       \begin{enumerate}[noitemsep]
         \item \textit{No dog likes to sleep on the ground} (1pt checked / -1pt unchecked)
@@ -178,9 +183,7 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item \textit{Noone likes to sleep} (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:}  The correct answer is \textit{No dog likes to sleep on the ground}. A right downward monotone determiner is a determiner such that in a sentence of the form D X Y it entails D X Y', where Y' is a subset of Y. \textit{Sleep on the ground} is a subset of \textit{sleep}. The sentence \textit{No poodle likes to sleep} shows that \textit{no} is also left downward monotone, because a poodle is a subset of dogs.
-
-\item {\bf Monotonicity: Few} Based on the sentences below, determine whether \textit{few} is downward monotone. Select all that apply. 
+\item  Based on the sentences below, determine whether \textit{few} is downward monotone. Select all that apply. 
 
 \begin{itemize}[noitemsep]
 \item Few athletes play piano.
@@ -194,10 +197,7 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item Not downward monotone (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:} The correct answers are left and right downward monotone. If \textit{Few athletes play piano} is true, then it means that \textit{few footballers play piano.} is also true. Since footballers is a subset of athletes, few is left downward monotone. If \textit{Few athletes play piano} is true, then it is also true that \textit{few athletes play piano well}, since the set containing all entities that play piano well is a subset of  the set that contains all entities that play piano.
-
-
-\item {\bf Monotonicity: All} Based on the sentences below, determine whether \textit{all} is downward monotone. Select all that apply. 
+\item Based on the sentences below, determine whether \textit{all} is downward monotone. Select all that apply. 
 \begin{itemize}[noitemsep]
 \item All dogs love walks.
 \item All chihuahuas love walks.
@@ -210,9 +210,20 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item Right downward monotone (-1pt checked / 1pt unchecked)
         \item Not downward monotone (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
-	
 
-{\bf Model answer:} The correct answer is left downward monotone. If \textit{All dogs love walks} is true, then it means that \textit{all chihuahuas love walks} is also true. Since chihuahuas is a subset of dogs, \textit{all} is left downward monotone. If \textit{All dogs love walks} is true, it does not entail that \textit{all dogs love walks in a park} is true. Some dogs might prefer walks in a city center. Therefore, \textit{all} is not right downward monotone.
+\end{enumerate}
+
+
+
+{\bf Model answers:}
+\begin{enumerate}
+ \item The correct answer is \textit{No dog likes to sleep on the ground}. A right downward monotone determiner is a determiner such that in a sentence of the form D X Y it entails D X Y', where Y' is a subset of Y. \textit{Sleep on the ground} is a subset of \textit{sleep}. The sentence \textit{No poodle likes to sleep} shows that \textit{no} is also left downward monotone, because a poodle is a subset of dogs.
+
+\item The correct answers are left and right downward monotone. If \textit{Few athletes play piano} is true, then it means that \textit{few footballers play piano.} is also true. Since footballers is a subset of athletes, few is left downward monotone. If \textit{Few athletes play piano} is true, then it is also true that \textit{few athletes play piano well}, since the set containing all entities that play piano well is a subset of  the set that contains all entities that play piano.
+
+\item The correct answer is left downward monotone. If \textit{All dogs love walks} is true, then it means that \textit{all chihuahuas love walks} is also true. Since chihuahuas is a subset of dogs, \textit{all} is left downward monotone. If \textit{All dogs love walks} is true, it does not entail that \textit{all dogs love walks in a park} is true. Some dogs might prefer walks in a city center. Therefore, \textit{all} is not right downward monotone.
+\end{enumerate}
+
 
 \item {\bf Licensing of negative polarity items} According to Ladusaw 1980, in which linguistic environments are negative polarity items licensed, i.e., in which linguistic environments are they acceptable?  
 
