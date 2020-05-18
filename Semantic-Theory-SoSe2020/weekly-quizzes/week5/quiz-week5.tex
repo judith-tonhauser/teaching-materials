@@ -44,50 +44,46 @@
 
 \begin{enumerate}[leftmargin = 12pt]
 
-\item {\bf Eulid diagram 1} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Eulid diagram capture?
+\item {\bf Euler diagram 1} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Euler diagram capture?
 
-\begin{tikzpicture}[fill=gray]
-% left hand
-\scope
-\clip (-2,-2) rectangle (2,2)
-      (1,0) circle (1);
-\fill (0,0) circle (1);
-\endscope
-% right hand
-\scope
-\clip (-2,-2) rectangle (2,2)
-      (0,0) circle (1);
-\fill (1,0) circle (1);
-\endscope
-% outline
-\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
-      (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
-     (-2,-2) rectangle (3,2) node [text=black,above] {};
+
+\begin{tikzpicture}
+% outline, double numbers in parentheses are coordinates, single number is the size of the circle.
+\draw (0,0) circle (1) (0,1)  node [text=black,below] {$A$}
+         (1,0) circle (2) (1,1)  node [text=black,above] {$B$}
+     (-2,-2) rectangle (5,2) node [text=black,above] {};
 \end{tikzpicture}
 
       \begin{enumerate}[noitemsep]
         \item \textit{Some dogs like Whiskas.} (-1pt checked / 1pt unchecked)
-	\item \textit{No dog likes Whiskas.} (1pt checked / -1pt unchecked)
-        \item \textit{Every dog likes Whiskas.} (-1pt checked / 1pt unchecked)
+	\item \textit{No dog likes Whiskas.} (-1pt checked / 1pt unchecked)
+        \item \textit{Every dog likes Whiskas.} (1pt checked / -1pt unchecked)
 	\end{enumerate}	
+
+
+{\bf Model answer:}  The correct answer is \textit{Every dog likes Whiskas}, since every member of the set dog is also member of the set of entities that like Whiskas.
+
+\item {\bf Euler diagram 2} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Euler diagram capture?
+
+\begin{tikzpicture}
+% outline
+\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+         (3,0) circle (1) (3,1)  node [text=black,above] {$B$}
+     (-2,-2) rectangle (5,2) node [text=black,above] {};
+\end{tikzpicture}
+
+      \begin{enumerate}[noitemsep]
+        \item \textit{Some dogs like Whiskas.} (-1pt checked / 1pt unchecked)
+	\item \textit{No dog likes Whiskas.} (-1pt checked / 1pt unchecked)
+        \item \textit{Every dog likes Whiskas.} (1pt checked / -1pt unchecked)
+	\end{enumerate}	
+
 
 {\bf Model answer:}  The correct answer is \textit{No dog likes Whiskas}, since the intersection between the set of dogs and the set of entities that like Whiskas is empty.
 
-\item {\bf Eulid diagram 2} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Eulid diagram capture?
+\item {\bf Euler diagram 3} A  the non-empty set of dogs. B is the non-empty set of all entities that like Whiskas. The meaning of which English sentence does the Euler diagram capture?
 
-\begin{tikzpicture}[fill=gray]
-% left hand
-\scope
-\clip (-2,-2) rectangle (2,2)
-      (1,0) circle (1);
-\fill (0,0) circle (1);
-\endscope
-% right hand
-\scope
-\clip (-2,-2) rectangle (2,2)
-      (0,0) circle (1);
-\fill (1,0) circle (1);
-\endscope
+\begin{tikzpicture}
 % outline
 \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
       (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
@@ -107,19 +103,19 @@
 
       \begin{enumerate}[noitemsep]
         \item A $\cap$ B = $\emptyset$ (1pt checked / -1pt unchecked)
-	\item A $\cup$ B = $\emptyset$  (-1pt checked / 1pt unchecked)
+	\item A $\cup$ B = $\emptyset$ (-1pt checked / 1pt unchecked)
         \item A $\subset$ B (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 	
-{\bf Model answer:}  The correct answer is  A $\cap$ B = $\emptyset$, since the intersection of dogs and likers of Whiskas is empty. 
+{\bf Model answer:}  The correct answer is  A $\cap$ B = $\emptyset$, since the intersection of dogs and the entities that like Whiskas is empty. 
 
 
 \item {\bf Sets 2} A  the set of parrots. B is the set of all entities that like to sing. Which formula captures the meaning of the sentence \textit{Every parrot likes to sing.}
 
         \begin{enumerate}[noitemsep]
-        \item A $\cap$ B = $\emptyset$ (1pt checked / -1pt unchecked)
+        \item A $\cap$ B = $\emptyset$ (-1pt checked / 1pt unchecked)
 	\item A $\cup$ B = $\emptyset$  (-1pt checked / 1pt unchecked)
-        \item A $\subset$ B (-1pt checked / 1pt unchecked)
+        \item A $\subset$ B (1pt checked / -1pt unchecked)
 	\end{enumerate}	
 
 {\bf Model answer:}  The correct answer is  A $\subset$ B because every member of the set of parrots is a member of the set of entities who like to sing.
@@ -127,7 +123,7 @@
 \item {\bf Sets 3}  A is a set of dogs. B is a set of all entities that like Whiskas. C is a set of snorers. The following sentences are true. 
 
 \begin{itemize}[noitemsep]
-\item No dog like Whiskas.
+\item No dog likes Whiskas.
 \item Some dogs are snorers.
 \item Everyone who likes Whiskas is a snorer.
 \end{itemize}
@@ -144,9 +140,12 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
 \item C $\subseteq$ B
 \end{enumerate}
 
-{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{No dog like Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{Everyone who likes Whiskas is a snorer}.
+{\bf Model answer:} The correct answers are (b), (c), (f). (b) captures the sentence \textit{no dog likes Whiskas}, i.e. the intersection of dogs and entities that like Whiskas is empty. (c) captures the sentence \textit{some dogs are snorers}, i.e. the intersection of dogs and is not empty. (f) captures the sentence \textit{everyone who likes Whiskas is a snorer}.
 
-(a) is false, it would be true if some dogs liked Whiskas. (d) is false, it would be true if no dog snored. (e) is false, it would be true if all dogs were snorers. (g) is false, it would be true, if all snorers would be Whiskas-lovers.
+(a) is false, it would be true if some dogs liked Whiskas. 
+(d) is false, it would be true if no dog snored. 
+(e) is false, it would be true if every dogs were a snorer. 
+(g) is false, it would be true, if every snorer would like Whiskas.
 
 
 \item {\bf Sets 4}  A is a set of humans. B is a set of all entities that like pizza. C is a set of all entities that like breadsticks.  The following sentences are true. 
@@ -169,12 +168,14 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
 
 {\bf Model answer:} The correct answers are (a), (b), (c). (a) and (c) correspond to the above given sentences. (b) is true because A is a subset of B and B is a subset of C, therefore A is a subset of C.
 
-\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, come up with a version of the sentence that shows that  \textit{every} is left downward monotone.
+\item {\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, write an argument that \textit{every} is left downward monotone. Make sure that your argument includes a relevant version of the sentence and explicit states how the two sentences show that \textit{every} is left downward monotone. (2 points, max 250 characters)
 	
-{\bf Model answer:} To show that an expression is left downward monotone, one needs to come up with a version of a sentence where human is substituted with a different expression that refers to subset of the set human, e.g. politician, woman, astronaut etc. If the entailment holds between two sentences, then  \textit{every} is left downward monotone.
+{\bf Model answer:} Consider the sentence \textit{Every woman uses Twitter}, where \textit{human} has been replaced by an expression that denotes a subset of humans, namely \textit{woman}. Because \textit{Every human uses Twitter} entails \textit{Every woman uses Twitter}, \textit{every} is left downward monotone. (1 point for a correct version of the sentence, 1 point for statement about the entailment relationship)
 
+\item {\bf Monotonicity: No/Few/All} 
 
-\item {\bf Monotonicity: No} The quantifier \textit{no} is right downward monotone because the sentence \textit{No dog likes to sleep} entails:
+\begin{enumerate}
+\item The quantifier \textit{no} is right downward monotone because the sentence \textit{No dog likes to sleep} entails:
 
       \begin{enumerate}[noitemsep]
         \item \textit{No dog likes to sleep on the ground} (1pt checked / -1pt unchecked)
@@ -182,9 +183,7 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item \textit{Noone likes to sleep} (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:}  The correct answer is \textit{No dog likes to sleep on the ground}. A right downward monotone determiner is a determiner such that in a sentence of the form D X Y it entails D X Y', where Y' is a subset of Y. \textit{Sleep on the ground} is a subset of \textit{sleep}. The sentence \textit{No poodle likes to sleep} shows that \textit{no} is also left downward monotone, because a poodle is a subset of dogs.
-
-\item {\bf Monotonicity: Few} Based on the sentences below, determine whether \textit{few} is downward monotone. Select all that apply. 
+\item  Based on the sentences below, determine whether \textit{few} is downward monotone. Select all that apply. 
 
 \begin{itemize}[noitemsep]
 \item Few athletes play piano.
@@ -198,10 +197,7 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item Not downward monotone (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
 
-{\bf Model answer:} The correct answers are left and right downward monotone. If \textit{Few athletes play piano} is true, then it means that \textit{few footballers play piano.} is also true. Since footballers is a subset of athletes, few is left downward monotone. If \textit{Few athletes play piano} is true, then it is also true that \textit{few athletes play piano well}, since the set containing all entities that play piano well is a subset of  the set that contains all entities that play piano.
-
-
-\item {\bf Monotonicity: All} Based on the sentences below, determine whether \textit{all} is downward monotone. Select all that apply. 
+\item Based on the sentences below, determine whether \textit{all} is downward monotone. Select all that apply. 
 \begin{itemize}[noitemsep]
 \item All dogs love walks.
 \item All chihuahuas love walks.
@@ -214,9 +210,20 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
         \item Right downward monotone (-1pt checked / 1pt unchecked)
         \item Not downward monotone (-1pt checked / 1pt unchecked)
 	\end{enumerate}	
-	
 
-{\bf Model answer:} The correct answer is left downward monotone. If \textit{All dogs love walks} is true, then it means that \textit{all chihuahuas love walks} is also true. Since chihuahuas is a subset of dogs, \textit{all} is left downward monotone. If \textit{All dogs love walks} is true, it does not entail that \textit{all dogs love walks in a park} is true. Some dogs might prefer walks in a city center. Therefore, \textit{all} is not right downward monotone.
+\end{enumerate}
+
+
+
+{\bf Model answers:}
+\begin{enumerate}
+ \item The correct answer is \textit{No dog likes to sleep on the ground}. A right downward monotone determiner is a determiner such that in a sentence of the form D X Y it entails D X Y', where Y' is a subset of Y. \textit{Sleep on the ground} is a subset of \textit{sleep}. The sentence \textit{No poodle likes to sleep} shows that \textit{no} is also left downward monotone, because a poodle is a subset of dogs.
+
+\item The correct answers are left and right downward monotone. If \textit{Few athletes play piano} is true, then it means that \textit{few footballers play piano.} is also true. Since footballers is a subset of athletes, few is left downward monotone. If \textit{Few athletes play piano} is true, then it is also true that \textit{few athletes play piano well}, since the set containing all entities that play piano well is a subset of  the set that contains all entities that play piano.
+
+\item The correct answer is left downward monotone. If \textit{All dogs love walks} is true, then it means that \textit{all chihuahuas love walks} is also true. Since chihuahuas is a subset of dogs, \textit{all} is left downward monotone. If \textit{All dogs love walks} is true, it does not entail that \textit{all dogs love walks in a park} is true. Some dogs might prefer walks in a city center. Therefore, \textit{all} is not right downward monotone.
+\end{enumerate}
+
 
 \item {\bf Licensing of negative polarity items} According to Ladusaw 1980, in which linguistic environments are negative polarity items licensed, i.e., in which linguistic environments are they acceptable?  
 
@@ -231,7 +238,7 @@ Select all true statements in set-theoretic notation. (Grading: multiple choice;
 
 \begin{enumerate}[noitemsep]
 
-\item Show that the argument of \textit{without} is a downward entailing environment. (In (4a), the determiner phrase \textit{any help} is the argument of \textit{without}.) (4 points; max. 550 characters)
+\item Show that the argument of \textit{without} is a downward entailing environment. (The determiner phrase \textit{any help} is the argument of \textit{without}.) (4 points; max. 550 characters)
 
 \item Show that the argument of \textit{hard} is a downward entailing environment. (In the sentence \textit{It is hard to buy a Mercedes}, the \textit{to}-infinitive \textit{to buy a Mercedes} is the argument of \textit{hard}.) (4 points; max. 550 characters)
 
