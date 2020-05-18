@@ -1,0 +1,180 @@
+\documentclass[a4,11pt]{article}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage{xcolor} %for color
+\usepackage[utf8]{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ { } }
+
+
+\setlength{\parindent}{0in}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+
+\title{Week 5: Quiz questions and model answers}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+{\bf Introductory message:} This quiz covers the material in CC section 2.5. This section discusses relations and functions.
+
+\begin{enumerate}[leftmargin = 12pt]
+
+\item {\bf Ordered pairs versus sets:} Imagine that Kim admires Sandy. To represent this state of affairs, which is more appropriate: a representation using an ordered pair, as in $\langle$Kim, Sandy$\rangle$, or a representation using a set, as in $\{$Kim, Sandy$\}$?
+
+ \begin{enumerate}[noitemsep]
+        \item The English verb {\em admire} is transitive, which means that it expresses a relation between pairs of individuals. The ordered pair is more appropriate: it captures that Kim and Sandy stand in a specific relation to one another, whereas the set merely captures that Kim and Sandy both have some property. (1pt)
+        
+        \item The English verb {\em admire} is transitive, which means that it expresses a relation between pairs of individuals. The set is more appropriate: it captures that Kim and Sandy stand in a relation to one another, whereas the ordered pair merely captures that Kim and Sandy both have some property. (0pts)
+\end{enumerate}
+
+{\bf Model answer:} Answer (a) is correct. The meaning of {\em admire} is better captured as a set of pairs of individuals that stand in the `admire' relation to one another than as a set of individuals (or than a set of sets of individuals).
+
+\item {\bf Exercise 11 on p.82:} Select the true statements.
+
+{\bf Model answer:}  The following statements are true: (a), (b), (d), (f), (g) and (h). Statements (a), (b), (f), (g) and (h) are true because of the following two properties of sets: the elements of a set are not ordered and the elements of a set are unique (i.e., \{a\} = \{a, a\}). Statement (d) is true because the two objects to the left and the right of the equal sign are identical, namely the pair $\langle 3,3 \rangle$. 
+
+Statement (c) is false because the pair $\langle 3,4\rangle$ has 3 as its first member and 4 as its second. That is not the case for the pair $\langle 4, 3 \rangle$.
+
+Statement (e) is false because $\{ \langle 3,3 \rangle\}$ is a set with one element, namely the pair $\langle 3,3\rangle$. The expression to the right of the equal sign is not a set, but just the pair $\langle 3,3\rangle$.
+
+\item {\bf Cartesian product:} Assume the sets A = $\{$Stuttgart, Paris, Asuncion, Washington$\}$  and  B = $\{$Germany, France, Paraguay, USA $\}$. What is the Cartesian product of A and B (A $\times$ B)? Select all that apply.
+
+\begin{enumerate}[noitemsep]
+        \item the set of all pairs $\langle$a,b$\rangle$ such that $a$ is an element of $A$ and $b$ is an element of $B$ (2 checked / -2 unchecked)
+
+	\item the set \begin{minipage}[t]{7cm}  $\{\langle Stuttgart, Germany \rangle, \langle Stuttgart, France \rangle, \langle Stuttgart, Paraguay \rangle, \langle Stuttgart, USA \rangle$, $\langle Paris, Germany \rangle, \langle Paris, France \rangle, \langle Paris, Paraguay \rangle, \langle Paris, USA \rangle, \langle Asuncion, Germany \rangle$, $\langle Asuncion, France \rangle , \langle Asuncion, Paraguay \rangle, \langle Asuncion, USA \rangle, \langle Washington, Germany \rangle$, $\langle Washington, France \rangle, \langle Washington, Paraguay \rangle, \langle Washington, USA \rangle\}$ \end{minipage} \\ (2 checked / -2 unchecked)
+
+        \item the set $\{\langle Stuttgart, Germany \rangle, \langle Paris, France \rangle, \langle Asuncion, Paraguay \rangle, \langle Washington, USA \rangle\}$ (-2 checked / 2 unchecked)
+\end{enumerate}
+
+\item {\bf Domain, codomain and range:} Assume the sets A = $\{ Stuttgart, Paris, Asuncion, Washington \}$  and  B = $\{ Germany, France, Paraguay, USA \}$ \\ and the relation R = $\{\langle Stuttgart, Germany \rangle, \langle Paris, France \rangle, \langle Asuncion, Paraguay \rangle\}$ in the Cartesian product of A and B. Which of the following go together? (1pt for each match)
+
+Expression:
+
+\begin{enumerate}[noitemsep]
+        \item domain of R
+        \item codomain of R
+        \item range of R
+\end{enumerate}
+
+Sets:
+
+\begin{enumerate}[noitemsep]
+        \item $\{ Stuttgart, Paris, Asuncion, Washington \}$
+        \item B
+        \item $\{ Germany, France, Paraguay \}$
+\end{enumerate}   
+
+{\bf Model answer:} The domain of R is the set A = $\{ Stuttgart, Paris, Asuncion, Washington \}$. The codomain of R is the set B. The range of R are those elements of B that are the second member of a pair in R, so the set $\{ Germany, France, Paraguay \}$
+
+
+\item {\bf Functions 1:} Assume the sets A = $\{ Stuttgart, Paris, Asuncion, Washington \}$  and  \\ B = $\{ Germany, France, Paraguay, USA \}$ \\ and the relation R = $\{\langle Stuttgart, Germany \rangle, \langle Paris, France \rangle, \langle Asuncion, Paraguay \rangle\}$ in the Cartesian product of A and B. Is R a function from A to B?
+
+\begin{enumerate}[noitemsep]
+        \item Yes, because every element of A that is the first element of a pair in R is mapped to exactly one element of B. (0pts)
+	\item No, because not every element of A is mapped to an element of B. (2pts)
+\end{enumerate}
+
+{\bf Model answer:} (b) is the correct answer. For R to be a function from A to B, every element of A would need to be mapped to a exactly one element of B (see the definition of functions on p.88). R is not a function because  R does not map `Washington'  to an element of B. 
+
+\item {\bf Exercise 12 on p.85:} Which answer is correct? You may only write the sentence ``Because $\rule{1cm}{0.15mm}$ expresses a $\rule{1cm}{0.15mm}$ and $\rule{1cm}{0.15mm}$ does not'', with the three $\rule{1cm}{0.15mm}$ filled in.
+
+{\bf Model answer:} The correct answer is ``Because {\em sibling} expresses a symmetric relation and {\em brother} does not''. To see that {\em brother} is not symmetric, consider Jake and Maggie Gyllenhaal. Jake is Maggie's brother, but not vice versa.
+
+\item {\bf Exercise 13 on p.85:} Which answer is correct? You may only write the sentence ``Because $\rule{1cm}{0.15mm}$ expresses a $\rule{1cm}{0.15mm}$ and $\rule{1cm}{0.15mm}$ does not'', with the three $\rule{1cm}{0.15mm}$ filled in.
+
+{\bf Model answer:} The correct answer is ``Because {\em be to the left of} expresses a transitive relation and {\em be immediately to the left of} does not''. 
+
+\item {\bf Functions 2:} Assume the set P = \{kim, dana, sandy, alex\}, the set H = \{happy, sad\} and the set T = \{1, 0\}. Assume that R1 and R2 are relations from P to H, that R3 is a relation from P to P, that R4 is a relation from P to T and that R5 to R7 are relations from T to T. Which of these relations are functions? Select all that are functions.
+
+\begin{enumerate}[noitemsep]
+        \item R1 = \{ $\langle$ kim, happy $\rangle$, $\langle$ dana, happy $\rangle$,  $\langle$ sandy, happy $\rangle$,  $\langle$ alex, happy $\rangle$ \} \\ (2 checked / -2 unchecked)
+
+        \item R2 = \{ $\langle$ kim, sad $\rangle$, $\langle$ dana, happy $\rangle$,  $\langle$ sandy, happy $\rangle$,  $\langle$ alex, happy $\rangle$ \} \\ (2 checked / -2 unchecked)
+        
+	\item R3 = \{ $\langle$ kim, kim $\rangle$, $\langle$ dana, dana $\rangle$,  $\langle$ sandy, sandy $\rangle$ \} \\ (-2 checked / 2 unchecked)
+
+	 \item R4 = \{ $\langle$ kim, 1 $\rangle$, $\langle$ dana, 1 $\rangle$,  $\langle$ sandy, 0 $\rangle$,  $\langle$ alex, 0 $\rangle$ \} \\ (2 checked / -2 unchecked)
+	 
+	 \item R5 =  \{ $\langle$ 1, 1 $\rangle$, $\langle$ 1, 1 $\rangle$,  $\langle$ 0, 0 $\rangle$,  $\langle$ 0, 0 $\rangle$ \} \\ (2 checked / -2 unchecked)
+	 
+ 	 \item R6 =  \{ $\langle$ 1, 1 $\rangle$, $\langle$ 1, 0 $\rangle$ \} \\ (-2 checked / 2 unchecked)
+	 
+  	 \item R7 =  \{ $\langle$ 1, 1 $\rangle$, $\langle$ 0, 1 $\rangle$ \} \\ (2 checked / -2 unchecked)
+	 
+\end{enumerate}
+
+{\bf Model answer:} The relations R1, R2, R4, R5 and R7 are functions: in each of these, all elements of the domain of the relation are mapped to exactly one element of the codomain of the relation. 
+
+The relations in R3 and R6 are not functions. R3 is not a function because `alex' is an element of the set P but not mapped to any element of the set H. R6 is not a function because the element `1' of T occurs as the first element of two pairs that differ on the second element, i.e., `1' is once mapped to `1' and once to `0'.
+
+\item {\bf Modification of exercise 16 on p.89f.:} Assume the set of all humans as the domain on Monday, May 18, 2020 for the nouns {\em height, age} and {\em citizenship}. Which of these are relational nouns and which of these are functional nouns?
+
+\begin{enumerate}[noitemsep]
+        \item {\em height} is a functional noun. (2 checked / -2 unchecked)
+        
+        \item {\em age} is a functional noun. (2 checked / -2 unchecked)
+                
+         \item {\em citizenship} is a functional noun.  (-2 checked / 2 unchecked)
+         
+\end{enumerate}
+
+{\bf Model answer:} Both {\em height} and {\em age} are functional nouns: every human is mapped to a unique height and a unique age. The noun {\em citizenship} is a relational noun: some humans have two citizenships, so it is not the case that every human is mapped to just one element of the set of citizenships.
+
+\item {\bf Exercise 17 on p.91:} Which answer has the correct answers to the three parts (a), (b) and (c) of this question?
+
+\begin{enumerate}[noitemsep]
+        \item (a) Bj\"orn (b) false (c) true (3pts)
+        
+         \item (a) Bj\"orn (b) true (c) true (2pts)
+         
+          \item (a) Bj\"orn (b) false (c) false (2pts)
+          
+          \item (a) Agnetha (b) false (c) true (2pts)
+        
+         \item (a) Agnetha (b) true (c) true (1pt)
+         
+          \item (a) Agnetha (b) false (c) false (1pt)
+         
+\end{enumerate}
+
+{\bf Model answer:} Answer (a) is the correct answer. For part (a), the `partner' function maps Agnetha to Bj\"orn, as represented by the pair $\langle$ Agnetha, Bj\"orn $\rangle$. 
+
+For part (b), the `partner' function maps Bj\"orn to Agnetha, not to Frida, so the statement is false. 
+
+For part (c), the `partner' function maps Bj\"orn to Agnetha, so $f(f($Bj\"orn$))$ is $f($Agnetha$)$, which is identical to the expression to the right of the equal sign.
+
+\item {\bf Exercise 18 on pp.91f.:} Which answer has the correct answers to the three parts (a), (b), (c) and (d) of this question? 
+
+\begin{enumerate}[noitemsep]
+        \item (a) \{$\langle$ Bj\"orn, 1 $\rangle$, $\langle$ Benny, 1 $\rangle$, $\langle$ Agnetha, 0 $\rangle$, $\langle$ Frida, 0 $\rangle$\} (b) 1 (c)  1 (d) 0 (4pts)
+        
+     \item (a) \{$\langle$ Bj\"orn, 1 $\rangle$, $\langle$ Benny, 1 $\rangle$ $\rangle$\} (b) 1 (c)  1 (d) 0 (3pts)
+     
+      \item (a) \{$\langle$ Bj\"orn, 1 $\rangle$, $\langle$ Benny, 1 $\rangle$, $\langle$ Agnetha, 0 $\rangle$, $\langle$ Frida, 0 $\rangle$\} (b) 0  (c)  0 (d) 1  (1pt)
+      
+       \item (a) \{$\langle$ Bj\"orn, 1 $\rangle$, $\langle$ Benny, 1 $\rangle$ \} (b) 0 (c)  0 (d) 1 (0pts)
+         
+\end{enumerate}
+
+{\bf Model answer:} Answer (a) is the correct answer. For part (a), the characteristic function of the set of male individuals is the function that maps every male individual in ABBA to 1 and every female individual in ABBA to 0. Answers (b) and (d) are incorrect because the female individuals in ABBA are not mapped to 0. 
+
+For part (b), the value of applying the {\sf male} function to the individual Bj\"orn is 1: remember that the function maps an individual to 1 if the individual is male and to 0 if the individual is female.
+
+For part (c), the value of applying the function denoted by {\em is male}, which is the function defined in part (a), to Bj\"orn is 1.
+
+For part (d), the value of applying the function denoted by {\em is male}, which is the function defined in part (a), to Agnetha is 0.
+
+\end{enumerate}
+\end{document}
