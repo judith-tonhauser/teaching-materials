@@ -1,3 +1,4 @@
+% !TEX encoding = UTF-8 Unicode
 \documentclass[a4,11pt]{article}
 \usepackage[margin=1in,top=1in,bottom=1in]{geometry}
 \usepackage{tikz} %to draw models
@@ -14,6 +15,8 @@
 
 
 \setlength{\parindent}{0in}
+
+\setlength{\parskip}{1ex}
 
 \definecolor{Pink}{RGB}{240,0,120}
 \newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
@@ -34,71 +37,112 @@
 
 \maketitle
 
-The quantifier every is left downward monotone. Given the sentence Every human uses Twitter, write an argument that every is left downward monotone. Make sure that your argument includes a relevant version of the sentence and explicit states how the two sentences show that every is left downward monotone.
+{\bf Monotonicity: Every} The quantifier \textit{every} is left downward monotone. Given the sentence \textit{Every human uses Twitter}, write an argument that \textit{every} is left downward monotone. Make sure that your argument includes a relevant version of the sentence and explicit states how the two sentences show that \textit{every} is left downward monotone. (2 points, max 250 characters)
 
-- 1 point for the sentence (as part of the argument), 1 point for the argument
-- -1 point for going over the word limit, -1 point for not writing in full sentences
+\subsection*{Examples are not arguments}
 
-- We asked you to write an argument that ?every? is left monotone. It is not enough to just write a sentence, like ?Every student uses Twitter?. 
-
-- Argument means applying the definition, not repeating the definition: ?If every human uses Twitter is true then it's also true that every woman and man use Twitter. Since every XY entails X'Y for every X' that is a subset of X , "every" is a left downward monotone.?
-
-- Arguments are written in English; the arrow ?> is not part of English
+You earned one point for providing a relevant example, but only if it was provided as part of an argument.
 
 \begin{itemize}[leftmargin = 12pt]
 
-\item \texttt{\justify If every human uses twitter is true, then every girl uses twitter is also true. The set of humans is a subset of the set of twitter users. And since all girls are humans, the set of girls is a subset of the set of humans.}
+\item \texttt{\justify Every woman uses Twitter.}
 
-\item \texttt{\justify Every man uses Twitter. Human is a superset of man. By using man instead of human, the sentence is still true.}
- 
-\item \texttt{\justify If Every human uses Twitter is true, than Every girl uses Twitter is also true. It is left downward because it has to do with the element on the left. In this case Every human is marked with an X and every girl is marked with an X'.}
+\end{itemize}
 
-\item \texttt{\justify If we consinder the sentence Every teenager uses Twitter we can see that Every human uses Twitter entails Every teenager uses Twitter. Teenager is in this case a subset of human.}
+\subsection*{Arguments are written in English sentences}
 
-\item \texttt{\justify "Every" is downward monotome because every human used twitter. That entails that Peter uses twitter,because he is human. Peter is therefore a subset of humans. This is based on the the concept of: If D X Y entails D X ?Y for all X ?that are subsets of X?.}
+An argument is a series of (English) sentences. The arrow $\rightarrow$ is not part of English.
 
-\item \texttt{\justify If Every human uses Twitter is true, then Peter uses Twitter is also true. Therefore, Peter (X') is a subset of humans (X). Twitter is Y: Since every XY entails every X'Y for every X' that is a subset of X, we can say that every is a Left Downward Monotone.}
+\begin{itemize}[leftmargin = 12pt]
 
-\item \texttt{\justifyA. Every human uses Twitter.?B. Every green eyed human uses Twitter.
-A entails B, so the sentence is left downward monotone.}
+\item \texttt{\justify Every human uses Twitter.Â -> Every child uses Twitter}
 
-\item \texttt{\justifyEvery human who has blonde hair uses Twitter.
-Because the set 'every human' includes 'every human with blonde hair' this sentence shows that 'every' is left downward monotone.}
-
-\item \texttt{\justify OVER CHARACTER COUNT: ?1a. Every human uses Twitter.
-1b. Every modern human uses Twitter.
-The meaning of the sentence in (1a) entails the meaning of the sentence in (1b): any sit. in which every human uses twitter, is a situation in which (1b) is true. Thus, the scope "every" is left downward monotone.}
-
-\item \texttt{\justify X = all humans
-X' = men
-Y = Twitter
-
-If every human uses Twitter is true, than it also entails the true statement that every men uses Twitter.
-This downward entailment is left because it has to do with the left variable (X' is a subset of X).}
-
-\item \texttt{\justify If every human uses Twitter it is the case that every woman uses Twitter.
-A is the set of humans and B is the set of people who use Twitter. If A?(set of woman) is a subset of A, A?is also a subset of B, which is correct in this example.}
-
-\item \texttt{\justify Every human uses Twitter, therefore some humans use Twitter. The entailemnt is correct and some humans is a subset of every human, therefore it is left downward monotone.}
-
-\item \texttt{\justify IfThe sentence every human uses twitter is true, it is also true that, for example every teenager and every elderly uses twitter. This means, that the statement every human is a superset that unifies all subsets of human beings.}
-
-\item \texttt{\justify Every human uses Twitter. -> Every child uses Twitter}
+\item \texttt{\justify Every girl usus Twitter.Â  Girl instead of human.}
 
 \item \texttt{\justify Every human uses Twitter. Every man uses Twitter. From general to specific.}
 
-\item \texttt{\justify Every human (X) uses Twitter (Y)" entails "Every girl (X') uses Twitter (Y)". -> left downward monotone}
+\item \texttt{\justify EveryÂ human (X)Â usesÂ Twitter (Y)" entails "EveryÂ girl (X')Â uses Twitter (Y)". -> left downward monotone}
+
+\end{itemize}
+
+\subsection*{Apply the correct definition}
+
+In making an argument, it is useful to review the definition of what you are arguing for. In this case, the textbook specifies on page 76: ``In general, a determiner $\delta$ is left downward monotone if $\delta$ X Y entails $\delta$ X$'$ Y for all X$'$ that are subsets of X''. 
+
+This definition tells you that you need to consider a variant of the given sentence {\em Every human uses Twitter} such that the element on the left is a subset of humans and that you need to consider whether {\em Every human uses Twitter} entails the variant you created.
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify Every human uses Twitter, therefore some humans use Twitter. The entailemnt is correct and some humans is a subset of every human, therefore it is left downward monotone.}
+
+\item \texttt{\justify Every man uses Twitter. Human is a superset of man. By using man instead of human, the sentence is still true.}
 
 \item \texttt{\justify Every man uses twitter is a subset of every human uses twitter, so every is left downward monotone.}
 
-\item \texttt{\justify Every girl usus Twitter.  Girl instead of human.}
+{\bf Edited to add after the screencast:} This is also a model answer, if the author had in mind the definition of entailment used in chapter 1.2.2: ``If sentence A entails sentence B, then every possible world in the proposition expressed by A is in the proposition expressed by B: the former proposition is a subset of the latter'' (p.34).
 
-\item \texttt{\justify left (det. xy folgt det. x bar y, where xbar is a subset of x)
-a) Every human uses Twitter.
-b)Every human I know uses Twitter. 
-right (det. xy folgt det. y bar x, where ybar is a subset of y)
-a)}
+\item \texttt{\justify If every human uses twitter is true, then every girl uses twitter is also true. The set of humans is a subset of the set of twitter users. And since all girls are humans, the set of girls is a subset of the set of humans.}
+
+\item \texttt{\justify IfÂ Every human uses TwitterÂ is true, thenÂ Peter uses TwitterÂ is also true. Therefore, Peter (X') is a subset of humans (X). Twitter is Y: SinceÂ everyÂ XY entailsÂ everyÂ X'Y forÂ everyÂ X' that is a subset of X, we can say thatÂ everyÂ is a Left Downward Monotone.}
 
 
 \end{itemize}
+
+\subsection*{Use the definition to formulate your argument}
+
+Formulating the argument requires practice, which is why we are including these questions on the weekly quizzes. Our advice is to use the definition to formulate the argument -- why reinvent the wheel...
+
+The definition on page 76 reads:  ``In general, a determiner $\delta$ is left downward monotone if $\delta$ X Y entails $\delta$ X$'$ Y for all X$'$ that are subsets of X''. Since you were asked to make the argument using the sentence {\em Every human uses Twitter}, you need to replace the bit of the definition that is general (``$\delta$ X Y entails $\delta$ X$'$ Y for all X$'$ that are subsets of X'') with the sentence we gave you and the sentence you created, to be able to conclude that {\em every} is left downward monotone. 
+
+These types of answers generally received a point for providing a relevant example, even if the argument had flaws.
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify If Every human uses TwitterÂ is true, than Every girlÂ uses TwitterÂ is also true. It is left downward because it has to do with the element on the left. In this case Every human is marked with an X and every girl is marked with an X'.}
+
+
+\item \texttt{\justify If every human uses Twitter it is the case that every woman uses Twitter.
+A is the set of humans and B is the set of people who use Twitter. If A' (set of woman) is a subset of A, A' is also a subset of B, which is correct in this example.}
+
+\item \texttt{\justify IfThe sentence every human uses twitter is true, it is also true that, for example every teenager and every elderly uses twitter. This means, that the statement every human is a superset that unifies all subsets of human beings.}
+
+\end{itemize}
+
+\subsection*{So close...}
+
+Your answers lost a point for going over the specified character limit or making a false claim.
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item Over character count; proof-reading is important \\ \texttt{\justify 1a. Every human uses Twitter.
+\\ 1b. Every modern human uses Twitter.
+\\ The meaning of the sentence in (1a) entails the meaning of the sentence in (1b): any sit. in which every human uses twitter, is a situation in which (1b) is true. Thus, the scope "every" is left downward monotone.}
+
+\item Follow through with the argument
+\\  \texttt{\justify If we consinder the sentenceÂ Every teenager uses TwitterÂ we can see thatÂ Every human uses TwitterÂ entailsÂ Every teenager uses Twitter. TeenagerÂ is in this case a subset ofÂ human.}
+
+\item Don't say things that are false
+\\  \texttt{\justify X = all humans
+\\ X' = men
+\\ Y = Twitter\\
+If every human uses Twitter is true, than it also entails the true statement that every men uses Twitter.
+This downward entailment is left because it has to do with the left variable (X' is a subset of X).}
+
+\end{itemize}
+
+\subsection*{Model answers}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify A. Every human uses Twitter. \\ B. Every green eyed human uses Twitter.
+\\ A entails B, so the sentence is left downward monotone.}
+
+{\bf Edited to add after the screencast:} It would have been a model answer if the last sentence had read ``A entails B, so {\em every} is left downward monotone''.
+
+\item \texttt{\justify Replacing the set of humans by one of its subsets, e.g. the set of old men, results in the statement "Every old man uses Twitter." As this is an entailment of the original statement "Every human uses Twitter", "every" is left downward monotone.}
+
+
+
+\end{itemize}
+
 \end{document}
