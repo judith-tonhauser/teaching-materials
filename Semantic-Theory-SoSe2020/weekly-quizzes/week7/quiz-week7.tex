@@ -17,7 +17,7 @@
 \newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
 
 
-\title{Week 6: Quiz questions and model answers}
+\title{Week 7: Quiz questions and model answers}
 \author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
 \date{\today}
 
@@ -25,14 +25,14 @@
 
 \maketitle
 
-{\bf Introductory message:} This quiz covers the material in K 4.1-4.2 and CC sections 3.1 and 3.2. These sections serve as an introduction to propositional logic. It covers atomic and complex formulae as 
+{\bf Introductory message:} This quiz covers the material in K 4.1-4.2 and CC sections 3.1 and 3.2. These sections serve as an introduction to propositional logic. It covers atomic and complex formulae and connectives that combine with formulae.
 
 \begin{enumerate}[leftmargin = 12pt]
 
 \item {\bf Propositional logic 1}
 The propositions without logical connectives (correct answer 1 point, incorrect answer -1 point)
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item atomic formulae
 \item complex formulae
 \end{itemize}
@@ -70,18 +70,53 @@ There are two types of logical connectives: binary and unary. Match each connect
 
 {\bf Model answer:} The correct answer is \textit{Modus Tollens}.
 
-\item {\bf Modus tollens}: Ex.3 on p. 85. For both of the following argument forms, say whether it is valid or a fallacy.  (1 for correct match; -1 point for incorrect match)
+\item {\bf Modus tollens}: Ex.3 on p. 85. For both of the following argument forms, say whether it is a valid argument or a fallacy.  (1 for correct match; -1 point for incorrect match)
 
 {\bf Model answer:} The argument that has the form of {\it Modus Tollens} is valid, because it is not possible for the conclusion to be false if the premises are true, i.e. it's not possible that it rained last night. The argument that has the form of {\it Denying the antecedent} is a fallacy, because it is possible for the conclusion to be false even if the premises are true. Even if it did not rain last night, the lawn could be wet for some other reason, for example, a sprinkler went off last night.
 
 
-\item {\bf De Morgan's Laws 1} One of the De Morgan's laws states that the two formulae are equivalent. Explain how the truth table below shows that they are equivalent. (3 points; 1 point for stating when formulae are equivalent; 1 point for stating explicitly which columns in the table need to be compared; 1 point for conclusion)
+\item {\bf  Material implication: Ex.10 p. 100.} Specify the semantics rule for the material conditional (correct answer 2 points, incorrect answer -2 points).
+
+\begin{enumerate}
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \to \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 0 or if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \to \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \iff \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 0 or if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae,  then $[[\phi \to \psi]]^{I}$ = 1 if $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (a). As shown in the table on p.99, the material implication is true when the antecedent is false (regardless of the truth value of the consequent) and when both the antecedent and the consequent are true.
+
+ 
+\item {\bf Validity} Using on the truth table below, determine whether the argument of the form \textit{ P $\to$ R; R: therefore $\neg$ P} is valid (correct answer 1 point, incorrect answer -1 point).
+
+
+\begin{tabular}{c | c | c| c }
+\hline \hline
+P & R & P $\to$ R  & $\neg$ P \\
+\hline
+1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1 \\
+\hline \hline
+\end{tabular}
+
+\begin{enumerate}
+\item The argument is valid, because when the conclusion is true in every case that the premises are true.
+\item The argument is not valid, because it is not the case that the conclusion is true in every case that the premises are true.
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (b), the argument is not valid. It is not valid because there is one case in which the premises are true (R is true and P $\to$ R is true) but the conclusion is false.
+
+
+\item {\bf De Morgan's Laws 1} One of the De Morgan's laws states that the two formulae below are equivalent. 
 
 \begin{enumerate}
 \item  $\neg [ P \land  Q ]$
 \item  $ [ \neg P \lor \neg Q ]$
 \end{enumerate}
 
+Explain how the truth table below shows that they are equivalent. (3 points; 1 point for stating when formulae are equivalent; 1 point for stating explicitly which columns in the table need to be compared; 1 point for conclusion)
 
 \begin{tabular}{c | c | c | c | c | c | c}
 \hline \hline
@@ -127,9 +162,9 @@ F & F & F \\
 \end{enumerate}
 
 
-{ \bf Model answer:} The correct answer is {\it T T T F equivalent}.
+{ \bf Model answer:} The correct answer is {\it T T T F equivalent}. The formulae are equivalent because they have the same truth values under every assignment.
 
-\item {\bf Tautologies} Ex. 17 p.105. Using truth tables, check whether the following pairs of formulae are tautologies. Select all tautologic formulae.
+\item {\bf Tautology: ex.17 p.105} . Using truth tables, check whether the following pairs of formulae are tautologies. Select all tautologic formulae.
 
 \begin{enumerate}
 \item $[P \lor Q]$
@@ -152,7 +187,7 @@ F & F & T& T& T \\
 \hline \hline
 \end{tabular}
 
-\item {\bf Ex. 7 p.96} Does P entail $[P \land Q]$?
+\item {\bf Entailment: Ex. 7 p.96} Does P entail $[P \land Q]$?
 
 \begin{enumerate}[noitemsep]
 \item Yes, because under each assignment that $[P \land Q]$ is True P is also True.
@@ -174,7 +209,7 @@ F & F & F \\
 \hline \hline
 \end{tabular}
 
-\item Does $\neg$ P entail $[ \neg P \lor \neg Q ]$?
+\item  {\bf Entailment} Does $\neg$ P entail $[ \neg P \lor \neg Q ]$?
 
 \begin{enumerate}[noitemsep]
 \item Yes, because under each assignment that $[ \neg P \lor \neg Q ]$ is True $\neg$ P is also True.
@@ -187,7 +222,7 @@ F & F & F \\
 
 \begin{tabular}{c | c | c }
 \hline \hline
- $\neg$ P & $\neg$ Q $[ \neg P \lor \neg Q ]$  \\
+ $\neg$ P & $\neg$ Q & $[ \neg P \lor \neg Q ]$  \\
 \hline
 T & T & T \\
 T & F & T \\
@@ -195,6 +230,28 @@ F & T & T \\
 F & F & F \\
 \hline \hline
 \end{tabular}
+
+
+\item  {\bf Scopal ambiguity:} The sentence below contains two connectives: the negation (\textit{didn't}) and the conjunction (\textit{and}). The sentence is ambiguous between two readings (a and b). Match each reading to an appropriate formula that captures it. (correct match 3 points, incorrect match -3 points)
+
+\begin{exe}
+\ex Mary didn't visit London and Paris.
+\begin{xlist}
+\ex Mary visited neither London nor Paris.
+\ex It is not the case that Mary visited both London and Paris.
+\end{xlist}
+\end{exe}
+
+Formulae, where P is \textit{Mary visited London} and Q is \textit{Mary visited Paris}. 
+\begin{enumerate}[noitemsep]
+\item $\neg [P \land Q ]$
+\item $[\neg P \land \neg Q]$
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answers are $[\neg P \land \neg Q]$ corresponds to reading (a) and $\neg [P \land Q ]$ corresponds to reading (b). In (b), the negation outscopes the conjuction $\neg [P \land Q ]$, therefore the sentence with this reading is true if Mary visited either one of the cities or neither of them. In (b), the conjuction outscopes the negation. The sentence with this reading is true only if Mary did not visit London and she did not visit Paris.
+
+
+
 
 \end{enumerate}
 \end{document}
