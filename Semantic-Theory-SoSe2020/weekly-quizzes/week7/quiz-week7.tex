@@ -1,0 +1,200 @@
+\documentclass[a4,11pt]{article}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage[utf8]{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ { } }
+
+
+\setlength{\parindent}{0in}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+
+\title{Week 6: Quiz questions and model answers}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+{\bf Introductory message:} This quiz covers the material in K 4.1-4.2 and CC sections 3.1 and 3.2. These sections serve as an introduction to propositional logic. It covers atomic and complex formulae as 
+
+\begin{enumerate}[leftmargin = 12pt]
+
+\item {\bf Propositional logic 1}
+The propositions without logical connectives (correct answer 1 point, incorrect answer -1 point)
+
+\begin{itemize}
+\item atomic formulae
+\item complex formulae
+\end{itemize}
+
+{\bf Model answer:} The correct answer is atomic formulae. Complex formulae are formed from atomic formulae with the help of connectives.
+
+
+\item {\bf Propositional logic 2}
+There are two types of logical connectives: binary and unary. Match each connective to labels binary or unary (correct match 1 point, incorrect match -1 point).
+
+\begin{enumerate}[noitemsep]
+\item $\land$
+\item $\lor$
+\item $\neg$
+\item $\rightarrow$
+\end{enumerate}
+
+{\bf Model answer:} The correct answers are $\land$, $\lor$, $\rightarrow$ are binary, $\neg$ is a unary connective. Binary connectives apply two independent formulae together, while a unary connective applies to a single formula.
+
+
+\item {\bf Argument Template:} An argument that has the following form is called: (correct answer 1 point, incorrect answer -1 point)
+
+\begin{enumerate}[noitemsep]
+\item[] If P then Q.  \hfill (Premise 1)
+\item[] Not Q.  \hfill  (Premise 2)
+\item[] Therefore, P. \hfill  (Conclusion)
+\end{enumerate}
+
+\begin{enumerate}[noitemsep]
+\item Modus Ponens
+\item Modus Tollens
+\item Denying the antecedent
+\item Affirming the consequent
+\end{enumerate}
+
+{\bf Model answer:} The correct answer is \textit{Modus Tollens}.
+
+\item {\bf Modus tollens}: Ex.3 on p. 85. For both of the following argument forms, say whether it is valid or a fallacy.  (1 for correct match; -1 point for incorrect match)
+
+{\bf Model answer:} The argument that has the form of {\it Modus Tollens} is valid, because it is not possible for the conclusion to be false if the premises are true, i.e. it's not possible that it rained last night. The argument that has the form of {\it Denying the antecedent} is a fallacy, because it is possible for the conclusion to be false even if the premises are true. Even if it did not rain last night, the lawn could be wet for some other reason, for example, a sprinkler went off last night.
+
+
+\item {\bf De Morgan's Laws 1} One of the De Morgan's laws states that the two formulae are equivalent. Explain how the truth table below shows that they are equivalent. (3 points; 1 point for stating when formulae are equivalent; 1 point for stating explicitly which columns in the table need to be compared; 1 point for conclusion)
+
+\begin{enumerate}
+\item  $\neg [ P \land  Q ]$
+\item  $ [ \neg P \lor \neg Q ]$
+\end{enumerate}
+
+
+\begin{tabular}{c | c | c | c | c | c | c}
+\hline \hline
+P & Q & P $\land$ Q & $\neg$ (P $\land$ Q) & $\neg$ P & $\neg$ Q & ($\neg$ P $\lor$ $\neg$ Q) \\
+\hline \hline
+T & T & T  & F & F & F & F\\
+T & F & F & T & F & T & T\\
+F & T & F& T & T & F & T\\
+F & F & F& T& T & T & T\\
+\hline \hline
+
+
+\end{tabular}
+
+{ \bf Model answer:} Two formulae are equivalent if they are have the same truth values under the exact same circumstances. $\neg$ (P $\land$ Q) is True whenever ($\neg$ P $\lor$ $\neg$ Q) is True, namely when either P or Q or both P and Q are false. $\neg$ (P $\land$ Q) is False whenever  ($\neg$ P $\lor$ $\neg$ Q) is False, namely when P and Q are true. Since the two formulae are true/false under the same circumstances, they are equivalent.
+
+
+
+
+\item {\bf De Morgan's Laws 2} Are following formulae are equivalent? Select the correct values for the column and whether the formulae are equivalent or not. (Correct answer 4 points)
+
+ $[P \lor Q]; \neg [ \neg P \land \neg Q]$
+
+
+\begin{tabular}{c | c | c | c }
+\hline \hline
+P & Q & P $\lor$ Q & $\neg [ \neg P \land \neg Q]$ \\
+\hline \hline
+T & T & T \\
+T & F & T \\
+F & T & T \\
+F & F & F \\
+\hline \hline
+\end{tabular}
+
+\begin{enumerate}
+\item T T T F equivalent
+\item T T T F not equivalent
+\item T F T F equivalent
+\item T F T F not equivalent
+\item T F T F equivalent
+\item F F T F not equivalent
+\end{enumerate}
+
+
+{ \bf Model answer:} The correct answer is {\it T T T F equivalent}.
+
+\item {\bf Tautologies} Ex. 17 p.105. Using truth tables, check whether the following pairs of formulae are tautologies. Select all tautologic formulae.
+
+\begin{enumerate}
+\item $[P \lor Q]$
+\item $[[P\rightarrow Q]  \lor  [Q \rightarrow P]]$
+\item $[[P \rightarrow Q] \iff \neg Q \lor \neg P ]$ 
+\item $[[[P \lor Q] \rightarrow  R] \iff [[P \rightarrow Q] \land [P \rightarrow  Q]]]$
+\end{enumerate}
+
+
+{ \bf Model answer:} The correct answer is (b). As shown in the truth table below, the formula is true under every assignment.
+
+\begin{tabular}{c | c | c | c | c}
+\hline \hline
+P & Q &  ( P$\rightarrow$Q) & ( Q $\rightarrow$ P )  & ( P$\rightarrow$Q) $\lor$ ( Q $\rightarrow$ P ) \\
+\hline
+T & T & T& T & T\\
+T & F & F& T & T\\
+F & T & T & F& T\\
+F & F & T& T& T \\
+\hline \hline
+\end{tabular}
+
+\item {\bf Ex. 7 p.96} Does P entail $[P \land Q]$?
+
+\begin{enumerate}[noitemsep]
+\item Yes, because under each assignment that $[P \land Q]$ is True P is also True.
+\item Yes, because under each assignment that P is True $[P \land Q]$ is also True.
+\item No, because it is not the case that under each assignment that P is True $[P \land Q]$ is also True.
+\item No, because it is not the case that under each assignment that $[P \land Q]$ is True P is also True.
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (c). The definition of entailment is {\it A entails B iff whenever A is true, B is also true}. P does not entail $[P \land Q]$, because $[P \land Q]$ is false when P is true and Q is false as shown in the second row of the table below.
+
+\begin{tabular}{c | c | c }
+\hline \hline
+P & Q &  $[P \land Q]$  \\
+\hline
+T & T & T \\
+ T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline \hline
+\end{tabular}
+
+\item Does $\neg$ P entail $[ \neg P \lor \neg Q ]$?
+
+\begin{enumerate}[noitemsep]
+\item Yes, because under each assignment that $[ \neg P \lor \neg Q ]$ is True $\neg$ P is also True.
+\item Yes, because under each assignment that $\neg$ P is True $[ \neg P \lor \neg Q ]$ is also True.
+\item No, because it is not the case that under each assignment that $\neg$ P is True $[ \neg P \lor \neg Q ]$ is also True.
+\item No, because it is not the case that under each assignment that $[ \neg P \lor \neg Q ]$ is True $\neg$ P is also True.
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (b). The definition of entailment is {\it A entails B iff whenever A is true, B is also true}. $\neg$ P entails $[ \neg P \lor \neg Q ]$, because whenever  $\neg$ P is True,  $[ \neg P \lor \neg Q ]$ is also true as shown in the first two rows of the table below.
+
+\begin{tabular}{c | c | c }
+\hline \hline
+ $\neg$ P & $\neg$ Q $[ \neg P \lor \neg Q ]$  \\
+\hline
+T & T & T \\
+T & F & T \\
+F & T & T \\
+F & F & F \\
+\hline \hline
+\end{tabular}
+
+\end{enumerate}
+\end{document}
