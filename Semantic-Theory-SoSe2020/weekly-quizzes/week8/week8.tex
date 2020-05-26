@@ -48,7 +48,8 @@
 
 {\bf Model answer:} According to CC p.67, ``Every A is a B'' is true if and only if every member of A is a member of B. Thus, ``Every married bachelor lives in New York'' is true if and only if every member of the set of married bachelors is a member of the set of people living in New York. Because the set of married bachelors is empty, it is trivially the case that every member of that set is a member of the set of people living in New York. Therefore, the semantics introduced in CC predicts that ``Every married bachelor lives in New York''  is true.
 
-\item {\bf Propositional logic 1:} What are propositions without any logical connectives called?  (1 point)
+\item {\bf Propositional logic 1}
+The propositions without logical connectives (correct answer 1 point, incorrect answer -1 point)
 
 \begin{itemize}[noitemsep]
 \item atomic formulae
@@ -57,7 +58,8 @@
 
 {\bf Model answer:} The correct answer is atomic formulae. Complex formulae are formed from atomic formulae with the help of connectives.
 
-\item {\bf Propositional logic 2:} There are two types of logical connectives: binary and unary. Match each connective to labels binary or unary (correct match 1 point, incorrect match -1 point).
+\item {\bf Propositional logic 2}
+There are two types of logical connectives: binary and unary. Match each connective to labels binary or unary (correct match 1 point, incorrect match -1 point).
 
 \begin{enumerate}[noitemsep]
 \item $\land$
@@ -66,25 +68,25 @@
 \item $\rightarrow$
 \end{enumerate}
 
-{\bf Model answer:} The correct answers are $\land$, $\lor$, $\rightarrow$ are binary, $\neg$ is a unary connective. Binary connectives apply two formulae together, while a unary connective applies to a single formula.
+{\bf Model answer:} The correct answers are $\land$, $\lor$, $\rightarrow$ are binary, $\neg$ is a unary connective. Binary connectives apply two independent formulae together, while a unary connective applies to a single formula.
 
 \item {\bf Syntax of propositional logic:} The syntactic rules for negation (p.101), conjunction (p.102) and disjunction (p.103) specify the rules by which one can create more complex expressions in propositional logic. Assume a propositional logic with the atomic formulae $u$, $v$ and $w$ (remember that any letter can be used for the atomic formulae). Which of the following expressions are syntactically well-formed according in propositional logic? Select all that are well-formed.
 
 \begin{enumerate}[noitemsep]
-\item $u$ \hspace*{2cm}% (1 checked / -1 unchecked)
-\item $a$ \hspace*{2cm} %(- 1 checked / 1 unchecked)
-\item $[u \wedge w]$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $[u \vee u]$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $u \wedge v \vee u$ \hspace*{2cm} %(- 1 checked / 1 unchecked)
-\item $[[u \wedge v] \vee u]$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $\neg v$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $\neg [v \vee w]$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $\neg [v \vee \neg w]$ \hspace*{2cm} %(1 checked / -1 unchecked)
-\item $\neg [v \neg \vee w]$ \hspace*{2cm} %(- 1 checked / 1 unchecked)
-\item $\neg \neg \neg v$ \hspace*{2cm}% (1 checked / -1 unchecked)
+\item $u$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $a$ \hspace*{2cm} (- 1 checked / 1 unchecked)
+\item $[u \wedge w]$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $[u \vee u]$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $u \wedge v \vee u$ \hspace*{2cm} (- 1 checked / 1 unchecked)
+\item $[[u \wedge v] \vee u]$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $\neg v$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $\neg [v \vee w]$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $\neg [v \vee \neg w]$ \hspace*{2cm} (1 checked / -1 unchecked)
+\item $\neg [v \neg \vee w]$ \hspace*{2cm} (- 1 checked / 1 unchecked)
+\item $\neg \neg \neg v$ \hspace*{2cm} (1 checked / -1 unchecked)
 \end{enumerate}
 
-{\bf Model answer:} The expressions in (a), (c), (d), (f), (g), (h), (i) and (k) are well-formed.
+{\bf Model answer:} The expressions in (a), (c), (d), (f), (g), (h), (i) and (i) are well-formed.
 
 (b) is not well-formed because $a$ is not a propositional letter. 
 
@@ -97,25 +99,24 @@
 
 
 \begin{enumerate}[noitemsep]
-\item \sem{$u$}{I1} \hspace*{2cm} 
-%(2 checked / -2 unchecked)
+\item \sem{$u$}{I1} \hspace*{2cm} (2 checked / -2 unchecked)
 
-\item \sem{$u$}{I2} \hspace*{2cm} %(-2 checked / 2 unchecked)
-
-
-\item \sem{$u \wedge v$}{I1} \hspace*{2cm} %(2 checked / -2 unchecked)
-
-\item \sem{$u \wedge v$}{I2} \hspace*{2cm} %(-2 checked / 2 unchecked)
+\item \sem{$u$}{I2} \hspace*{2cm} (-2 checked / 2 unchecked)
 
 
-\item \sem{$\neg w$}{I1} \hspace*{2cm} %(2 checked / -2 unchecked)
+\item \sem{$u \wedge v$}{I1} \hspace*{2cm} (2 checked / -2 unchecked)
 
-\item \sem{$\neg w$}{I2} \hspace*{2cm} %(-2 checked / 2 unchecked)
+\item \sem{$u \wedge v$}{I2} \hspace*{2cm} (-2 checked / 2 unchecked)
 
 
-\item \sem{$[u \wedge v] \vee w$}{I1} \hspace*{2cm} %(2 checked / -2 unchecked)
+\item \sem{$\neg w$}{I1} \hspace*{2cm} (2 checked / -2 unchecked)
 
-\item \sem{$[u \wedge v] \vee w$}{I2} \hspace*{2cm} %(2 checked / -2 unchecked)
+\item \sem{$\neg w$}{I2} \hspace*{2cm} (-2 checked / 2 unchecked)
+
+
+\item \sem{$[u \wedge v] \vee w$}{I1} \hspace*{2cm} (2 checked / -2 unchecked)
+
+\item \sem{$[u \wedge v] \vee w$}{I2} \hspace*{2cm} (2 checked / -2 unchecked)
 
 \end{enumerate}
 
@@ -153,7 +154,7 @@ Propositional logic formulae:
 {\bf Model answer:} The English sentences in (a) - (e) are translated by the Propositional logic formulae in (a) - (e), respectively (i.e., in the order given).
 
 
-\item {\bf Argument Template:} An argument that has the following form is called: (1 point)
+\item {\bf Argument Template:} An argument that has the following form is called: (correct answer 1 point, incorrect answer -1 point)
 
 \begin{enumerate}[noitemsep]
 \item[] If P then Q.  \hfill (Premise 1)
@@ -170,9 +171,43 @@ Propositional logic formulae:
 
 {\bf Model answer:} The correct answer is \textit{Modus Tollens}.
 
-\item {\bf Modus tollens}: Ex.3 on p. 96. For both of the following argument forms, say whether it is a valid argument or a fallacy.  (correct match 3 points; incorrect match -3 points)
+\item {\bf Modus tollens}: Ex.3 on p. 85. For both of the following argument forms, say whether it is a valid argument or a fallacy.  (1 for correct match; -1 point for incorrect match)
 
 {\bf Model answer:} The argument that has the form of {\it Modus Tollens} is valid, because it is not possible for the conclusion to be false if the premises are true, i.e. it's not possible that it rained last night. The argument that has the form of {\it Denying the antecedent} is a fallacy, because it is possible for the conclusion to be false even if the premises are true. Even if it did not rain last night, the lawn could be wet for some other reason, for example, a sprinkler went off last night.
+
+
+\item {\bf  Material implication: Ex.10 p. 100.} Specify the semantics rule for the material conditional (correct answer 2 points, incorrect answer -2 points).
+
+\begin{enumerate}
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \to \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 0 or if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \to \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae, then $[[\phi \iff \psi]]^{I}$ = 1 if $[[\phi]]^{I}$ = 0 or if $[[\phi]]^{I}$ = 1 and $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\item If $\phi$ and $\psi$ are formulae,  then $[[\phi \to \psi]]^{I}$ = 1 if $[[\psi]]^{I}$ = 1, and 0 otherwise. 
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (a). As shown in the table on p.99, the material implication is true when the antecedent is false (regardless of the truth value of the consequent) and when both the antecedent and the consequent are true.
+
+ 
+\item {\bf Validity} Using on the truth table below, determine whether the argument of the form \textit{ P $\to$ R; R: therefore $\neg$ P} is valid (correct answer 1 point, incorrect answer -1 point).
+
+
+\begin{tabular}{c | c | c| c }
+\hline \hline
+P & R & P $\to$ R  & $\neg$ P \\
+\hline
+1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1 \\
+\hline \hline
+\end{tabular}
+
+\begin{enumerate}
+\item The argument is valid, because when the conclusion is true in every case that the premises are true.
+\item The argument is not valid, because it is not the case that the conclusion is true in every case that the premises are true.
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (b), the argument is not valid. It is not valid because there is one case in which the premises are true (R is true and P $\to$ R is true) but the conclusion is false.
 
 
 \item {\bf De Morgan's Laws 1} One of the De Morgan's laws states that the two formulae below are equivalent. 
@@ -182,7 +217,7 @@ Propositional logic formulae:
 \item  $ [ \neg P \lor \neg Q ]$
 \end{enumerate}
 
-Explain how the truth table below shows that they are equivalent. (max.\ 350 characters; 3 points; 1 point for stating when formulae are equivalent; 1 point for stating explicitly which columns in the table need to be compared; 1 point for conclusion)
+Explain how the truth table below shows that they are equivalent. (3 points; 1 point for stating when formulae are equivalent; 1 point for stating explicitly which columns in the table need to be compared; 1 point for conclusion)
 
 \begin{tabular}{c | c | c | c | c | c | c}
 \hline \hline
@@ -229,6 +264,29 @@ F & F & F \\
 
 
 { \bf Model answer:} The correct answer is {\it T T T F equivalent}. The formulae are equivalent because they have the same truth values under every assignment.
+
+\item {\bf Tautology: ex.17 p.105} . Using truth tables, check whether the following pairs of formulae are tautologies. Select all tautologic formulae.
+
+\begin{enumerate}
+\item $[P \lor Q]$
+\item $[[P\rightarrow Q]  \lor  [Q \rightarrow P]]$
+\item $[[P \rightarrow Q] \iff \neg Q \lor \neg P ]$ 
+\item $[[[P \lor Q] \rightarrow  R] \iff [[P \rightarrow Q] \land [P \rightarrow  Q]]]$
+\end{enumerate}
+
+
+{ \bf Model answer:} The correct answer is (b). As shown in the truth table below, the formula is true under every assignment.
+
+\begin{tabular}{c | c | c | c | c}
+\hline \hline
+P & Q &  ( P$\rightarrow$Q) & ( Q $\rightarrow$ P )  & ( P$\rightarrow$Q) $\lor$ ( Q $\rightarrow$ P ) \\
+\hline
+T & T & T& T & T\\
+T & F & F& T & T\\
+F & T & T & F& T\\
+F & F & T& T& T \\
+\hline \hline
+\end{tabular}
 
 \item {\bf Entailment: Ex. 7 p.96} Does P entail $[P \land Q]$?
 
