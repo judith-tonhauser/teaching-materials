@@ -1,0 +1,144 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4,11pt]{article}
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage{xcolor} %for color
+\usepackage[utf8]{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ { } }
+
+
+\setlength{\parindent}{0in}
+
+\setlength{\parskip}{1ex}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
+
+\title{Writing an argument 2}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Week 6 quiz, question 12:
+
+Show that the argument of {\em difficult} is a downward entailing environment. (In the sentence {\em It is difficult to buy a Mercedes}, the {\em to-}infinitive {\em to buy a Mercedes} is the argument of {\em difficult}.)
+
+Show that the argument of {\em possible} is an upward entailing environment. (In the sentence {\em It is possible to buy a Mercedes}, the {\em to-}infinitive {\em to buy a Mercedes} is the argument of {\em possible}.)
+
+\subsection*{Sample model answers}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify Let's take the set of white dogs as a possible subset of the set of dogs. Then, "It is difficult to feed dogs" entails "It is difficult to feed white dogs". Therefore, the argument of difficult is a downward entailing environment.} 
+
+\item \texttt{\justify The argument "difficult" is a downward entailing evironment, because the sentence "it is difficult to buy a Mercedes" entails "it is difficult to buy a black Mercedes".}
+
+\item \texttt{\justify An entailment by a sentence X of the form [ ... A ... ] to a sentence Y of the form [ ... B ... ] where B is more specific than A is labelled an DOWNWARD ENTAILMENT. Consider the sentences X: It is difficult to walk. Y: It is difficult to walk while being drunk. Since B is more specific than A and X entails Y, the argument of difficult is a downward entailing environment.}
+
+\end{itemize}
+
+\subsection*{Our previous screencast explained why these arguments did not receive any points or not full points}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify If its possible to buy a Mercedes, it is possible to buy a car.}
+
+\item \texttt{\justify It is possible to buy a Mercedes. entails It is possible to buy a car.}
+
+\item \texttt{\justify It is possible to buy a Mercedes. --> Upward entailment: It is possible to buy a car.}
+
+\item \texttt{\justify It's possible to buy cars
+\\ it's possible to buy motor vehicles
+\\ it's possible to buy goods}
+
+\item \texttt{\justify upward entailment focusses from something more specific to something general. Therefore, it is possible to buy a Mercedes, thus, it is possible  buy a car}
+
+\item \texttt{\justify It is difficult to ride a horse.
+\\ It is difficult to ride a horse well.
+\\ -->set denoted by to ride a horse, is a superset of the set denoted by to ride a horse well. Argument of difficult is a downward entailing environment.}
+
+\end{itemize}
+
+The following answers don't follow what we said in the first screencast either (and we won't comment about those aspects here), but there seems to be an additional confusion here about denotations and subset relations:
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify e.g.  (1) It is difficult to buy a Mercedes A-Klasse.
+\\         (2) It is difficult to buy an oldtimer Mercedes.
+\\ Therefore, the argument of difficult is a downward entailing environment.}
+
+\item \texttt{\justify It is possible to buy a Mercedes, therefore it is possible to pay for a car. This is a correct statement and buying a Mercedes is a subset to paying for a car, therefore the argument of possible is upward entailing.}
+
+\item \texttt{\justify A: It is difficult to buy a Mercedes.
+\\ B: It is difficult to buy a car produced by Mercedes.
+\\ B is a subset of A, which means A entails B.
+\\ Therefore, if A is true, B has to be true, too.
+\\ = downward entailment}
+
+\end{itemize}
+
+
+\subsection*{Be precise}
+
+Spell-check and proof-read your responses and make sure your conclusion is about what you were asked to argue for. 
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify Consider the two sentences: "It is difficult to buy a Mercedes" and "It is difficult to buy a car". "Cars" denotes a superset of "Mercedes". Because "It is difficult to buy a car" entails "It is difficult to buy a car" the argument of difficult is a downward entailing environment. The argument licenses entailments from supersets to subsets.}
+
+\item \texttt{\justify a. It is difficult to buy a Mercedes.  \\ b. It is difficult to buy a expensive AMG version of Mercedes.
+\\ B is an entailment of sentence A. in ever Situation in which B is true A is also true. Difficult is hence a downward-entailing environment.}
+
+\item \texttt{\justify For example, the sentences  "It is difficult to run." and  "It is difficult to run fast." only differ on the argument of difficult. "To run" is a superset of "to run fast". The argument of difficult is a downward entailing environment because the argument licenses an entailment from superset to subset.}
+
+{\bf JT comment after screencast:} I remember now what I wanted to say about this argument! It does belong here after all. The argument does not state what the entailment relationship is between the two sentences. It only gives the two sentences, points out that the arguments stand in a subset relationship, and then claims that the argument licenses entailment from superset to subset. What is missing is the explicit statement that {\em It is difficult to run} entails {\em It is difficult to run fast}.
+
+\item \texttt{\justify Consider the two sentences: It's hard to find a someone AND it's hard to find a girl. 
+The sentences only differ on the argument of hard: The set denoted by to find somebody, is a superset of the set denoted by to find a girl.
+If it's hard to find somebody, then this sentence entails that it's hard to find a girl too. Therefore the argument (hard) licenses downward entailment from supersets to subsets.}
+
+\item \texttt{\justify A: It is possible to buy a Mercedes.
+\\ B: It is possible to buy a car. 
+\\ A entails B so 'possible' is an upward entailing environment.}
+
+
+\item \texttt{\justify (A) It is possible to buy a Mercedes. \\ (B) It is possible to buy a car.
+\\ B entails A, so A is an upward entailing environment.}
+
+
+\item \texttt{\justify Consider It is possible to buy a Mercedes and It is possible to buy a car. The only difference is due to the argument to buy ...: Cars denote a superset of Mercedes. Because It is possible to buy a Mercedes entails It is possible to buy a car, the argument of to buy... is an upward entailing environment.}
+
+\end{itemize}
+
+
+\subsection*{Points lost for more subtle reasons}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify The sentence: 'It is possible to buy a Mercedes' only differs in the argument of possible from the sentence: 'It is possible to buy a Mercedes A-Class'. Because not every Mercedes is a Mercedes A-Class, 'It is possible to buy a Mercedes A-Class' entails 'It is possible to buy a Mercedes'. Therefore, the argument of possible is an upward entailing environment.}
+
+\item \texttt{\justify The argument of possible is in an upward entailing environment because one could say: It is possible to buy a car. The definition of an upward entailment goes as follows: An entailment by a sentence of the form [ ... A ... ] to a sentence of the form [ ...B... ] where A is more specific than B can thus be labelled an upward entailment. Since a Mercedes is more specific than a car, the argument of possible (especially in that example) can be considered an upward entailment.}
+
+\item \texttt{\justify An upward entailing environment is an entailment by a sentence of the form $[$ ... A ... $]$ to a sentence of the form $[$ ... B ... $]$ where A is more speciﬁc than B. If it is possible to buy a Mercedes is true, than it is possible to buy a car is also true, since a Mercedes is subset of a car. With the argument of possible we can move from a specific form, which in this case would be the Mercedes, to a more general one, which I chose to be car, but could also be vehicle or a similar noun.}
+
+\end{itemize}
+
+\end{document}
