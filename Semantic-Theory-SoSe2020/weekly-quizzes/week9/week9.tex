@@ -1,0 +1,227 @@
+\documentclass[a4,11pt]{article}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage[utf8]{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ { } }
+\usepackage{tipa}
+
+
+\setlength{\parindent}{0in}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+% Semantic brackets
+\newcommand{\6}{\mbox{$[\hspace*{-.6mm}[$}} 
+\newcommand{\9}{\mbox{$]\hspace*{-.6mm}]$}}
+\newcommand{\sem}[2]{\6#1\9$^{#2}$}
+
+\title{Week 9: Quiz questions and model answers}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+{\bf Introductory message:} This quiz covers the material in K chs. 8 and ch. 9. These chapters deeper into the concepts already introduced in week 2: entailment, presuppositions and implicature with the focus on (conversational) implicature.
+
+\begin{enumerate}[leftmargin = 12pt]
+
+\item { \bf Sentence vs. utterance} Match each property as belonging to an utterance or to a sentence. (each correct match 1pt)
+
+\begin{enumerate}[noitemsep]
+\item volume
+\item truth value
+\item location
+\item proposition
+\item speed
+\item time
+\end{enumerate}
+
+{ \bf Model answer:} The correct answers are utterances have (a), (c), (e), (f) properties, while sentences have properties (b) and (d).
+
+
+\item { \bf Review: implication} In week 2, we learned different diagnostics that allow us to differentiate between three types of implication. Match each implication with the trait that it possesses: (each correct match 1pt)
+
+Types of implication:
+\begin{enumerate}[noitemsep]
+\item Implicature
+\item Entailment
+\item Presupposition
+\end{enumerate}
+
+Traits:
+\begin{enumerate}[noitemsep]
+\item Defeasible
+\item Reinforceable
+\item Projects over entailment-cancelling operators
+\item Non-defeasible
+\item Non-reinforceable
+\item Does not project over entailment-cancelling operators
+\end{enumerate}
+
+{ \bf Model answer:} As per CC p.28, implicatures are defeasible and reinforceable. Entailment are not defeasible nor reinforceable and they do not project over entailment-cancelling operators. Presupposition are not defeasible nor reinforceable but they do project over entailment-cancelling operators. 
+
+\item  { \bf Exercise on p. 157} For each of the sentences, determine whether the inference triggered by the statement is i) a conversational implicature, ii) entailment, iii) presupposition. (each correct match 3pts)
+
+
+\begin{enumerate}[noitemsep]
+\item My mother is the mayor of Waxahachie. \\ 
+	inferred: The mayor of Waxahachie is a woman.
+\item That man is either Martha’s brother or her boyfriend.  \\
+	inferred: The speaker does not know whether the man is Martha’s brother or boyfriend.
+\item My great-grandfather was arrested this morning for drag racing. \\  
+	inferred:  I have a great-grandfather.
+\item That’s a great joke – Ham, Shem and Japheth couldn’t stop laughing when they heard it from Noah. \\  
+	inferred: The joke has lost some of its freshness.
+\end{enumerate}
+
+
+{ \bf Model answer:} The correct answers are (a) is an entailment, (b) and (d) is a conversational implicature; (c) is a presupposition. 
+
+(a) is an entailment because it is non-defeasible and it does not project. It is non-defeasible because the example {\it My mother is the mayor of Waxahachie. \#In fact, the mayor of Waxahachie is not a woman.} is self-contradictory. It does not project because the sentences  {\it My mother is not the mayor of Waxahachie. Is my mother the mayor of Waxahachie?} do not imply that the mayor of Waxahachie is a woman.
+
+(c) is a presupposition because it is non-defeasible and it projects.  It is non-defeasible because the example {\it  My great-grandfather was arrested this morning for drag racing. \#In fact, I don't have a great-grandfather.} is self-contradictory. It projects because the sentences  {\it My great-grandfather was not arrested this morning for drag racing. Was my great-grandfather arrested this morning for drag racing?} do not imply that the speaker has a a great-grandfather.
+
+(b) and (d) are conversational implicatures because they are defeasible. The examples {\it That man is either Martha’s brother or her boyfriend. In fact, he is her boyfriend.} and {\it That’s a great joke – Ham, Shem and Japheth couldn’t stop laughing when they heard it from Noah. Actually, they haven't heard the joke before.} are not contradictory.
+
+
+\item  { \bf Identifying maxims 1}  What maxim is violated in B's reply? (1pt)
+
+\begin{exe}
+\exi{A:} Where is Elena Vaik\v{s}norait\.{e}'s office?
+\exi{B:} Keplerstrasse 17. You take the elevator to the fourth floor, turn right (but you could also turn left) and take the stairs leading up. If you go down, you’ll enter the literature department, and I don’t think you want that, since I assume your business is linguistics related.
+\end{exe}
+
+\begin{enumerate}[noitemsep]
+\item relevance
+\item quantity
+\item quality
+\item manner
+\end{enumerate}
+
+{ \bf Model answer:} The  correct answer is the maxim of quantity, because the contribution is more informative than necessary. 
+
+\item  { \bf Identifying maxims 2} What maxim is violated in B's reply? (1pt)
+
+\begin{exe}
+\exi{A:} What do you do for a living?
+\exi{B:} What I do is that I’m an instructor and the subject matter that I teach is linguistics.
+\end{exe}
+
+\begin{enumerate}[noitemsep]
+\item relevance
+\item quantity
+\item quality
+\item manner
+\end{enumerate}
+
+
+{ \bf Model answer:} The  correct answer is the maxim of manner, because the contribution is not brief.
+
+\item  { \bf Identifying maxims 3}  What maxim is violated in B's reply? (1pt)
+
+
+\begin{exe}
+\exi{A:} What did Leslie do today?
+\exi{B:} Leslie read fifty pages and opened her book.
+\end{exe}
+
+\begin{enumerate}[noitemsep]
+\item relevance
+\item quantity
+\item quality
+\item manner
+\end{enumerate}
+
+{ \bf Model answer:} The  correct answer is the maxim of manner, since the contribution is not orderly: you need to open the book to be able to read it.
+
+\item  { \bf Identifying maxims 4}  Instead of saying “Be brief”, Grice's third maxim of manner is "Be brief (avoid unnecessary prolixity)." By phrasing the maxim this way, which two of his maxims of manner did Grice violate?
+
+\begin{enumerate}
+1. Avoid obscurity of expression.
+2. Avoid ambiguity.
+3. Be brief (avoid unnecessary prolixity). 4. Be orderly.
+\end{enumerate}
+
+{ \bf Model answer:} The correct answers are "Avoid obscurity of expression" and  "Be brief". 
+
+
+\item  { \bf Implicature}  What is the likely implicature carried by B's reply? State which maxim (quality, quantity, relevance, manner) is most important in triggering the implicature.
+
+\begin{exe}
+\exi{A:} Is Andreas dating anyone these days?
+\exi{B:} Well, he goes to Heidelberg every weekend.
+\end{exe}
+
+{ \bf Model answer:} The most likely implicature is that Andreas is dating somebody in Heidelberg. The implicature is triggered by the maxims of quantity and relevance. The maxim of quantity is flouted because A's question requires a \textit{yes} or \textit{no} response, therefore B's response is therefore not as informative as is required. The maxim of relevance is flouted because B's response seems to be irrelevant to the question asked.
+
+
+\item { \bf  XOR} Finish the truth table for the exclusive or (XOR): (4 points)
+
+\begin{tabular}{ccc}
+p & q & p XOR q \\
+T & T & \\
+T & F & \\
+F & T& \\
+F & F & \\
+\end{tabular}
+
+\begin{enumerate}[noitemsep]
+\item T, T, T, T
+\item T, T, T, F
+\item F, T, T, F
+\item F, T, T T
+\end{enumerate}
+
+\item { \bf  Inclusive vs. Exclusive OR} In English, sentences containing or can be interpreted with the inclusive reading ($\lor$) or with exclusive reading (XOR). For sentences in (5) on p. 163 determine which sentences are most naturally interpreted with the exclusive or the inclusive reading. (4 points)
+
+{ \bf Model answer:}  (b) and (d) are most naturally interpreted with the exclusive reading, whereas (a) and (c) with the inclusive reading.
+
+\item { \bf  Material implication 1:} Which one of the sentences in (6) on p. 163 is false? (2 points)
+
+\begin{enumerate}[noitemsep]
+\item 
+\item 
+\item 
+\item 
+\end{enumerate}
+
+{ \bf Model answer:}  The correct answer is (c). Material implication is false only when the antecedent is true and the consequent is false. In (c), the antecedent is true (triangles have three sides), but the consequent is false (the moon is not made of green cheese). Therefore, the entire sentence is false.
+
+\item { \bf  Material implication 2} On p. 163, Kroeger argues that analyzing English conditionals as material implication leads to  unexpected inferences. The conditional {\it If you’re hungry, there’s some pizza in the fridge} if treated as a material implication predicts the inference that {\it If there’s no pizza in the fridge, then you’re not hungry.}. Why does this inference arise? (3 points)
+
+\begin{enumerate}
+\item The inference arises because of Modus Tollens that allows us to make inferences of the following form {\it If p, then q. Not q. Therefore not p}. Substituting p with \textit{you’re hungry} and q with \textit{there’s some pizza in the fridge}, we derive the inference that {\it If there’s no pizza in the fridge, then you’re not hungry.}
+\item The inference arises because of Modus Tollens that allows us to make inferences of the following form {\it If p, then q. Not q. Therefore not p}. Substituting q with \textit{you’re hungry} and p with \textit{there’s some pizza in the fridge}, we derive the inference that {\it If there’s no pizza in the fridge, then you’re not hungry.}
+\item The inference arises because of Modus Ponens. Modus Ponens allows us to make the following inference {\it If p, then q. p. Therefore q.} Substituting p with \textit{you’re hungry} and q with \textit{there’s some pizza in the fridge}, we derive the inference that {\it If there’s no pizza in the fridge, then you’re not hungry.}
+\item The inference arises because of Modus Ponens. Modus Ponens allows us to make the following inference {\it If p, then q. p. Therefore q.} Substituting q with \textit{you’re hungry} and p with \textit{there’s some pizza in the fridge}, we derive the inference that {\it If there’s no pizza in the fridge, then you’re not hungry.}
+\end{enumerate}
+
+{ \bf Model answer:} The correct answer is (a).
+
+\item Put the following sentences in the right order. Start with the sentence which contains the strongest quantifier.
+
+\begin{enumerate}[noitemsep]
+\item All dogs bark at mailmen.
+\item Many dogs bark at mailmen.
+\item Some dogs bark at mailmen.
+\end{enumerate}
+
+{ \bf Model answer:} The correct order is (a), (b), (c). \textit{All} is the strongest quantifier because sentence (a) it entails (b) and (c). \textit{Many} is weaker than \textit{all} because sentence (b) does not entail (a). \textit{Some} is the weakest because sentence (c) does not entail sentences (a) or (b).
+
+\item By uttering {\it Some of the students passed the exam} the speaker implies that not all students passed the exam. Explain how the implicature is derived.
+
+{ \bf Model answer:}  The implicature is derived via pragmatic reasoning. The maxims of quality state that the speaker should try to make true contributions. The fact that the speaker used a weaker expression (\textit{some}) rather than a stronger alternative (\textit{all}) means that the speaker has no evidence for the stronger alternative. 
+
+
+\end{enumerate}
+\end{document}
