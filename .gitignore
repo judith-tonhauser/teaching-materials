@@ -8,17 +8,7 @@
 *.aux
 *.synctex.gz
 *.toc
-papers/prior-paper/prior.pdf
-papers/factives-paper/factives-paper.pdf
-
-# potentially large zoib model files
-*.rds
-
-# SALT 2018 submission
-/salt2018
-
-# MIT talk outline
-/mit2018
+*.pdf
 
 # Other files */node_modules/
 *.RData
