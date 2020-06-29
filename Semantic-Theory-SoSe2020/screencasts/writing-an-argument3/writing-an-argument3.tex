@@ -1,0 +1,152 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4,11pt]{article}
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\usepackage{tikz} %to draw models
+\usetikzlibrary{tikzmark}
+\usepackage{multicol} %for multi columns
+\usepackage{xcolor} %for color
+\usepackage{inputenc}
+\usepackage{gb4e}
+\usepackage{enumitem}
+\usepackage{amsmath} %for fractions
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ { } }
+
+
+\setlength{\parindent}{0in}
+
+\setlength{\parskip}{1ex}
+
+\definecolor{Pink}{RGB}{240,0,120}
+\newcommand{\jt}[1]{\textbf{\textcolor{Pink}{#1}}}
+
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
+
+\title{Writing an argument 3}
+\author{Judith Tonhauser and Elena Vaik\v snorait\.{e} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Week 9 quiz, question 14
+
+{ \bf  Scalar implicature} By uttering {\it Some of the students passed the exam}, the speaker implies that not all students passed the exam. Explain how the implicature is derived.
+
+Sentence that is uttered by a speaker: {\it Some of the students passed the exam}
+\\ Implication (a conversational implicature): not all students passed the exam
+
+
+
+\subsection*{Let's review what the textbook says}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item p.140: characteristics of conversational implicatures, ``i. The implicature is different from the literal sentence meaning''
+
+In our example, the literal meaning is ``Some As are Bs'' and the conversationally implicated meaning is ``Not all As are Bs''. 
+
+These are different!
+
+\begin{exe}
+\ex {\em Some of the students passed the exam} is true if and only if the intersection between the set of students and the set of people who passed the exam is not empty. 
+
+\ex {\em Not all students passed the exam} is true if and only if the set of students is not a subset of the set of people who passed the exam (i.e., there may be an overlap (a student who passed the exam) but at least one student (and possibly all) needs to not have passed the exam).
+
+\end{exe}
+
+Assume a model in which none of the students passed the exam. In this model, (1) is false but (2) is true.
+
+\item p.141: ``The connection between what is said and what is implicated, taking context into account, cannot be arbitrary. It must be rule-governed to a significant degree, otherwise the speaker could not expect the hearer to reliably understand the intended meaning.''
+
+Question 14 asked you to identify how the hearer would be able to understand not just the literal meaning (``Some As are Bs'') but the conversationally implicated meaning (``Not all As are Bs'').
+
+\item Question 13 `Quantifier strength' asked you to organize sentences with {\em all, many} and {\em some} by strength, where strength was defined in terms of entailment. {\em All dogs bark at the mailman} entails {\em Many dogs bark at the mailman}, and both entail {\em Some dogs bark at the mailman}. 
+
+Thus, as discussed on p.172: ``On the scale $\langle$ {\em none, some, many, all} $\rangle$, {\em all} is a stronger (more informative) term than {\em many}''. Likewise, {\em all} is a stronger term than {\em some}.
+
+{\bf Addendum after screencast was made:} This is based on the assumption that, in order for ``All As are Bs'' to be true, the set A is not empty. This is typically captured as a presupposition: researchers assume that ``All As are Bs'' presupposes that the set A is not empty and, if so, that ``All As are Bs'' is true if and only if the set A is included in the set B. As discussed in a previous homework, ``All As are Bs'' does not entail ``Some As are Bs'', if the assumption that the set A is not empty is not made!
+
+\item We can think about this strength relation with respect to Grice's Maxims of Conversation (p.142), in particular the following two:
+
+Quality 1: Do not say what you believe to be false.
+\\
+Quantity 1: Make your contribution as informative as is required.
+
+A speaker who follows these maxims will use the strongest (i.e., most informative) quantifier such that their utterance is true: to fulfill quantity, they will want to use the strongest/most informative one and, to fulfill quality, they will want to not use a stronger quantifier if they don't know that that quantifier results in a true sentence.
+
+{\em All of the students passed} entails {\em Some of the students passed}.
+
+\item p.142: ``A speaker may communicate either by obeying the maxims or by breaking them, as long as the hearer is able to recognize which strategy is being employed.''
+
+The hearer knows a) the strength relation between the quantifiers and b) that the speaker is juggling these two maxims.
+
+\item Given that {\em all} is stronger than {\em some}, a speaker who uses {\em some} can be reasoned, by the hearer, to do so because they do not know that the stronger quantifier {\em all} is true. So, the hearer can reason that the speaker thinks {\em some, but not all} is true.
+
+\end{itemize}
+
+\subsection*{Issues}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify A: Did all of the students pass the exam? 
+\\ B: No, some of the students passed the exam.
+\\ B's use of some entails 'some' and implicates 'not all'.}
+
+This response restates the question (albeit with a nice example!).
+
+\item \texttt{\justify This implicature is derived from its semantic under-determination, because the sentence fails to express a complete proposition.}
+
+The semantic meaning of an utterance of {\em Some of the students passed the exam} is not under-determined: it is true if and only if the intersection of the set of students with the set of people who passed the exam is not empty. 
+
+Whether the sentence expresses a complete proposition depends on the perspective one takes: for some researchers, the proposition is the semantic content (so the sentence does not fail to express a complete proposition); for other researchers, the pragmatic implicature needs to be derived to understand the complete proposition. 
+
+None of this addresses {\em how} the implicature is derived.
+
+\end{itemize}
+
+
+\subsection*{On the right track}
+
+\begin{itemize}[leftmargin = 12pt]
+
+\item \texttt{\justify This implicature is triggered by the word some. The meaning of some implies that not everybody but neither nobody has passed. It is weaker than Every/None.}
+
+How does {\em some} trigger this implicature? The 3rd sentence goes in the right direction; the 2nd sentence restates the question.
+
+\item \texttt{\justify Some is a scalar implicature, saying some in this case implies not all because because it is lower an the scale than all.}
+
+Category error. This is on the right track with respect to quantifier strength, but {\em some} is a quantifier, not a scalar implicature. A scalar implicature is an implication/content/meaning, not a particular word. It would be OK to say that {\em some} triggers a scalar implicature.
+
+\item \texttt{\justify "Some" is a weaker than "all". Therefore, if all students had passed, you would use "all", the strongest quantifier. As "not all have passed", "some have passed" is not contradictory in a defeasablility test. Therefore, we can be true, that the sentence is a conversational implicature. The implicature arises due to the maxim of quality and relevance, because one does not say more than necessary.}
+
+On the right track with respect to quantifier strength, but why was the defeasibility test applied, what does it mean to say ``we can be true'' and how does the maxim of relevance come into play? Also, sentences are not conversational implicatures: a conversational implicature is a particular type of meaning that a sentence can give rise to. One can express a conversational implicature by way of a sentence.
+
+\item \texttt{\justify Some is a weaker quanitfier than all. You would use all,  if all students passed the exam, which is a stronger quantifier. The Maxims of Revelance and Quality support this implicature in its conversational utterance.}
+
+Also on the right track with respect to quantifier strength, but what is the Maxim of ``Revelance'' and what does it mean to say that two maxims ``support this implicature in its conversational utterance''?
+
+\item \texttt{\justify Because "some" is a stronger quantifier than "not all" and stronger qualifiers imply weaker qualifiers according to the maxim of quantity, the sentence "Some of the students passed the exam" implies that "not all students passed the exam".}
+
+What's a ``qualifier''? And while {\em imply} is a useful word in semantics/pragmatics, it is important to be precise. What is important here is the entailment relationship between sentences with {\em all} and {\em some}, not between sentences with {\em not all} and {\em some}. 
+
+\item \texttt{\justify The quantifier "some" is weaker than the quantifier "all". Only quantifiers that are weaker than or equal to "some" can potentially be implied by it. As "some" can't imply that something is the case for all subjects ("all Students"), it implies that it is not the case for all subjects therefore the implication "Not all students passed the exam." is derived.}
+
+Again, careful with overuse of the word {\em imply}. It is true that a sentence with {\em some} only entails sentences with quantifiers weaker than {\em some} and that a sentence with {\em some} doesn't entail the sentence with {\em all}. In addition to the relevant strength relation (that a sentence with {\em all} entails a sentence with {\em some}), the maxims need to be considered to understand how the implicature arises.
+
+\item \texttt{\justify "some" is on the scale of <none, some, many, all>. In general conversation, we would assume that the sentence above implies "only some" because we would violate the maxim of quantity if we didn't. We expect the speaker to be precise and give us all the information they know. If "some" were supposed to mean "some, in fact many", that would sound imprecise.}
+
+Yes to the scale! But who is {\em we}? In talking about conversational implicatures, it is important to distinguish the speaker and the hearer. Why is {\em some, in fact many} relevant? The relation between {\em some} and {\em all} was important to consider here.
+
+
+\end{itemize}
+
+\end{document}
