@@ -8,7 +8,6 @@
 *.aux
 *.synctex.gz
 *.toc
-*.pdf
 
 # Other files */node_modules/
 *.RData
