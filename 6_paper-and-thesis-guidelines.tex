@@ -1,0 +1,293 @@
+\documentclass[11pt,fleqn,a4paper/thesis]{article}
+\usepackage[margin=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+%\usepackage[dvips]{graphics}
+%\usepackage[table]{xcolor}
+%\usepackage{amssymb}
+\usepackage{float}
+%\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{subcaption}
+
+\usepackage[normalem]{ulem}
+
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+  \do\Y\do\Z}
+
+\usepackage{multicol}
+\usepackage{txfonts}
+\usepackage{amsfonts}
+\usepackage{natbib}
+\usepackage{gb4e}
+\usepackage[all]{xy}
+\usepackage{rotating}
+\usepackage{tipa}
+\usepackage{multirow}
+\usepackage{authblk}
+\usepackage{url}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{array}
+
+\def\bad{{\leavevmode\llap{*}}}
+\def\marginal{{\leavevmode\llap{?}}}
+\def\verymarginal{{\leavevmode\llap{??}}}
+\def\swmarginal{{\leavevmode\llap{4}}}
+\def\infelic{{\leavevmode\llap{\#}}}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+%\definecolor{gray}{rgb}{0.36, 0.54, 0.66}
+
+\newcommand{\dashrule}[1][black]{%
+  \color{#1}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}\xleaders\hbox{\rule{4pt}{0pt}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}}\hfill\kern0pt%
+}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{1ex}
+
+\newcommand{\yi}{\'{\symbol{16}}}
+\newcommand{\nasi}{\~{\symbol{16}}}
+\newcommand{\hina}{h\nasi na}
+\newcommand{\ina}{\nasi na}
+
+\newcommand{\foc}{$_{\mbox{\small F}}$}
+
+\hyphenation{par-ti-ci-pa-tion}
+
+\setlength{\bibhang}{0.5in}
+\setlength{\bibsep}{0mm}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+
+\newcommand{\6}{\mbox{$[\hspace*{-.6mm}[$}} 
+\newcommand{\9}{\mbox{$]\hspace*{-.6mm}]$}}
+\newcommand{\sem}[2]{\6#1\9$^{#2}$}
+\renewcommand{\ni}{\~{\i}}
+
+\newcommand{\citepos}[1]{\citeauthor{#1}'s \citeyear{#1}}
+\newcommand{\citeposs}[1]{\citeauthor{#1}'s}
+\newcommand{\citetpos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{0em}}}% no optional argument here, please!
+
+
+\title{Guidelines for term papers and theses}
+
+\author{Judith Tonhauser}
+\affil{University of Stuttgart}
+
+\renewcommand\Authands{ and }
+
+\newcommand{\jt}[1]{\textbf{\color{blue}JT: #1}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This document provides detailed information on the content and organization of papers and theses in linguistics, as well as on the styles and conventions (``mechanics'') for such works. It thereby also provides information on how such works will be assessed. 
+
+The current document expands on the following document, referred to as the ``IfLA document'', which also provides information on papers and theses in linguistics: 
+
+\url{https://www.ling.uni-stuttgart.de/institut/ifla/PDF_Upload/Allgemeine-Info/FormblattHaus-Abschlussarbeiten_IfLA_2019_neu.pdf}
+
+Please take particular note of the extensive guidelines in the IfLA document on the style of referencing in linguistics (sections 3 and 4)!
+
+Your term paper/thesis will be graded on the following scale: 
+
+\setlength{\tabcolsep}{20pt}
+\begin{tabular}{rrrr}
+100-95,5 points: 1,0 & 87-83,5 points: 2,0 & 75-71,5 points: 3,0 & 63-60 points: 4,0  \\ 
+95-91,5 points: 1,3 & 83-79,5 points: 2,3  & 71-67,5 points: 3,3 & 59-0 points: 5,0 \\
+91-87,5 points: 1,7 & 79-75,5 points: 2,7 & 67-63,5 points: 3,7 & \\
+\end{tabular}
+
+Of the 100 possible points, 70 are allotted to content, 20 to organization and 10 to mechanics.
+
+\section{Content (70 points)}
+
+To receive full credit:
+
+\begin{itemize}[itemsep=-1pt,leftmargin=2.5ex,topsep=-2pt]
+
+\item All of the sentences can be interpreted and the content of each sentence pertains to the topic of the paper/thesis.
+
+\item The paper/thesis is appropriate to read for somebody who has taken an introduction to linguistics, but is not familiar with the topic to which your research question pertains. (That is, the paper/thesis is not written for your instructor/advisor, who is very familiar with the topic!) Background on the topic is properly introduced, the empirical phenomenon is introduced and illustrated with examples, and terminology is defined and exemplified on its first use. 
+
+\item The paper/thesis presents an investigation of a research question. As such, it first states and motivates the research question (`introduction', section 1), it then contextualizes the research question (`prior research', section 2), it then presents an empirical investigation of the research question, including the results of that investigation (`empirical investigation', section 3), it then discusses implications of the results (`discussion', section 4), and it then concludes with a summary of the research conducted on the research question (`conclusions', section 5).
+
+\begin{itemize}[leftmargin=2.5ex,topsep=-2pt]
+
+\item Introduction: What is the research question? How is the research question motivated?
+
+The research question is not necessarily presented in the first sentence of the paper/thesis. In fact, in most cases, it is first necessary to gently introduce the reader to the phenomenon discussed in the paper and the topic of the paper, by using examples, clarifying terminology, and introducing relevant background, before the research question can be stated. The introduction also tells the reader (briefly) about the result of the investigation, and provides a brief overview of the sections of the paper/thesis. (You are not writing a crime novel, so it is not necessary to create suspense.)
+
+\item Prior research: Which other works have addressed the research question? Which other works have made a relevant assumption? Which other works have used a similar methodology?
+
+The presentation and critical discussion of relevant prior literature serves to contextualize the research question. For any prior literature that is discussed, the paper/thesis makes clear its relevance to the paper/thesis (e.g., to the research question, to the methodology, to the results). Depending on the relationship of the particular work to the research question, the prior work may be just summarized in a single sentence, or may need a paragraph, or even an entire subsubsection. Prior literature that is discussed in more detail is first summarized in a neutral and factual way, and then discussed critically. The summary is detailed enough to allow the reader to understand how the research pertains to your research question and to follow your discussion, if there is one. Terminology used in prior literature is defined and illustrated, or (when appropriate) replaced by terminology used in your paper/thesis. Works are summarized and critiqued, not the researchers.
+
+\item Empirical investigation: How was the research question investigated? What are the results?
+
+The methodology of the empirical investigation is presented in sufficient detail for somebody else to replicate the empirical investigation. 
+
+In the results section, the results are presented in a way that is appropriate for the data collected, i.e., by using the appropriate descriptive statistics (tables and/or figures). The research question is explicitly answered in the results section.
+
+\item Discussion: What are implications of the results? How do the results bear on larger issues around the research question?
+
+The discussion section/chapter briefly reminds the reader of the results of the empirical investigation with respect to the research question and then discusses the implications of the results. For instance, if the investigation provided empirical support for a hypothesis, which hypotheses or research questions might one investigate next? Or, if the investigation provided empirical support against a hypothesis, are there short-comings in the investigation that one might address in future research? Or do the results provide support for a novel hypothesis, to be investigated in future research? See also Rule 8 of the `Ten simple rules for structuring paper/thesis' document. The discussion section/chapter should connect the investigation that is presented in the paper/thesis to the wider body of research discussed in `prior research'.
+
+\item Conclusions: What was investigated and why? What was found?
+
+The concluding section/chapter minimally states the research question and briefly summarizes the results and the implications. It can also mention future research directions or short-comings of the investigation to be rectified in future research. 
+
+\end{itemize}
+
+\item The paper/thesis has an informative title, pertaining to the research question (not, e.g., {\em Research paper for Advanced Semantics} or {\em My thesis}).
+
+\item The paper/thesis is written in a scientific manner: claims are supported by empirical evidence and/or references, and hypotheses are identified as such. Personal opinions are not included. The paper/thesis does not include flowery language (e.g., {\em These data are just wonderful}), inessential information (e.g., {\em Language is a tool for human communication}) or information about how the author feels about the research (e.g., {\em This research was difficult to conduct}).
+
+\item The works cited are peer-reviewed books, journal articles or conference papers; wikipedia, newspaper articles and the like are not peer-reviewed and therefore typically not appropriate. (You can identify suitable peer-reviewed works by searching key words pertaining to your research topic in the {\em Modern Language Association} (MLA) database, to which the University of Stuttgart provides you access: go to the UB webpage, then to the `Katalog  der UB', search for ``MLA International Bibliography'', e.g., in Titelwort, and you will find the link to the MLA database.)
+
+\item All examples, figures and tables are discussed in the main body of the text; the paper/thesis does not expect the reader to figure out by themselves what they show. Examples, figures and tables occur in the main body of the text (not, for instance, at the end), at the place when they are most useful to the reader.
+
+\item The language used in the paper/thesis is inclusive (\url{https://www.linguisticsociety.org/resource/guidelines-inclusive-language}). For instance, speakers and listeners are not exclusively male, and examples do not only have male subjects acting on female objects.
+
+\end{itemize}
+
+\section{Organization (20 points)}
+
+To receive full credit:
+
+\begin{itemize}[itemsep=-1pt,leftmargin=2.5ex,topsep=-2pt]
+
+\item Papers have sections and subsections; theses have chapters, sections and subsections. Chapters, sections and subsections have informative names that guide the reader.
+
+\item The organization of the paper/thesis aids in guiding the reader. A typical organization is the following:
+
+\begin{enumerate}[itemsep=-1pt,leftmargin=3.5ex,topsep=-2pt]
+
+\item Introduction: states and motivates the research question; provides an overview of the remaining chapters/sections of the thesis/paper
+
+\item Prior research: contextualizes the research question; summarizes and critiques prior literature pertaining to the research question
+
+\item Empirical investigation: presents the details of the empirical investigation, the results of the investigation, and how the results answer the research question
+
+This chapter/section is typically divided into a `Methods' and a `Results' section/sub-section. For an experiment, the `Methods' (sub-)section includes information about participants, materials and procedure (in that order); for a corpus study, the `Methods' (sub-)section includes information on the corpus used as well as all the information needed to replicate the corpus study.
+
+\item Discussion: implications of the results are discussed, in view of the literature reviewed in chapter/section 2.
+
+\item Conclusions: the paper/thesis is briefly summarized and suggestions for future research pertaining to the research question can be made
+
+\end{enumerate}
+
+
+
+\item For a short paper (4,000 words or fewer), do not include an abstract. For a longer paper or a thesis, an abstract should be included and describe the paper/thesis in its entirety: research question, motivation for the research question, main results and implications.
+
+\item Each section/chapter makes a larger point and each subsection makes a smaller point that pertains to the larger point of the section or chapter within
+which it is contained. The same goes for paragraphs: each paragraph makes a point that connects to the points made in the previous and the following
+paragraphs; the paragraphs within a (sub-)section/chapter jointly contribute to the point of the (sub-)section/chapter.
+
+\item Within a section, chapter or a subsection, the paper/thesis makes explicit how the paragraphs relate to one another. Within a paragraph, the paper/thesis makes explicit how the sentences are connected: for instance, parallel syntactic structures are used for points pertaining to the same question or argument; expressions like {\em however} or {\em but} tell the reader about a contrast; using {\em first...second...finally} guides the reader through points pertaining to the same question or argument. See also Rule 4 of the `Ten simple rules for structuring papers' document.
+
+\end{itemize}
+
+\section{Mechanics (10 points)}
+
+To receive full credit:
+
+\begin{itemize}[itemsep=-1pt,leftmargin=2.5ex,topsep=-2pt]
+
+\item Your name is stated right below the title of the paper/thesis. Please also state how many ECTS you are writing the paper/thesis for.
+
+\item Font: some standard serif font (e.g., Times New Roman), same font throughout
+
+\item Font size: 11pt or 12pt (including footnotes and references); section and subsection titles and the header of the paper can have a larger font size (e.g., if you're writing the paper in Latex).
+
+\item 2-2.5cm margins 
+
+\item Single line spacing everywhere
+
+\item Footnotes, not endnotes
+
+\item The text is left- and right-aligned.
+
+\item Paper/thesis submitted as PDF (not, e.g., in Word). Theses are also submitted in paper format (see Pr\"ufungsordungen).
+
+\item Figures and tables are consecutively numbered (separately) and have captions.
+
+\item Chapters, sections, subsections and pages are consecutively numbered. Exception: The reference section is not numbered. It comes after the numbered sections, but before any appendices (which include, e.g., experiment materials).
+
+\item For papers with a specified word limit: word count included (count entire PDF using \url{http://www.montereylanguages.com/pdf-word-count-online-free-tool.html}, do not exclude numbers from word count)
+
+\item Few to no typos (either British or American English spelling are acceptable, use one consistently)
+
+\item Proper punctuation (e.g., no comma before clause-embedding {\em that})
+
+\item Few to no grammatical errors (I encourage you to use short sentences and to read published literature to identify appropriate phrasings; a great resource for phrasings is here: \url{http://www.phrasebank.manchester.ac.uk/})
+
+\item Chapter, section and subsection numbers and names are consistently formatted; paragraphs are consistently formatted (no indentation of the first paragraph of section, chapter or subsection).
+
+\item Mentioned words are italicized in the running text. Bold-facing can be used, sparingly, for emphasis.
+
+\item The word {\em prove} is not used except to talk about a mathematical proof. In linguistics, we investigate whether there is empirical support for a hypothesis. 
+
+\item The author is referred to in the first person singular, the first person plural, or not at all.
+
+\item Examples are numbered consecutively and formatted according to the Leipzig glossing conventions (\url{https://www.eva.mpg.de/lingua/resources/glossing-rules.php}). Examples in footnotes are numbered using lowercase Roman numerals, rather than Arabic ones; for examples in footnotes, the count is reset to (i) for each footnote.
+
+\item Diacritics like * and \# occur between the example number and the example, as in (\ref{ex}b), not as part of the example, as in (\ref{ex}c).
+
+\begin{exe}
+\ex\label{ex}
+\begin{xlist}
+\ex Nobody has ever slept this long.
+\ex \infelic Everybody has ever slept this long.
+\ex \#Everybody has ever slept this long.
+\end{xlist}
+\end{exe}
+
+\item Prior research is discussed in either the present or the past tense (no mixing).
+
+\item Non-English expressions are always translated and the translation occurs in single quotes (e.g., {\em Hund} `dog').
+
+\item Citations in the main body of the paper/thesis as well as in footnotes are properly and consistently formatted (see IfLA document sections 3 and 4). For works with more than two authors, you can use {\em et al.} after the first name instead of spelling out the authors' names. 
+
+\item References are not included in footnotes, but in the (unnumbered) reference section/bibliography.
+
+\item Quotes from other works are properly formatted and attributed (see IfLA document section 4). When you quote a work, the expectation is that you have consulted that work, i.e., are not just reporting somebody else's quote.
+
+\item Examples from other works are properly attributed, but not placed in quotes. For instance:
+
+\begin{exe}
+\ex It is significant that he has been found guilty. \hfill (\citealt[144]{kiparsky-kiparsky70})
+\end{exe}
+
+\item Reference section/chapter: References are properly and consistently formatted (see IfLA document section 5; this is a version of the APA style).
+
+\item Theses should include a cover sheet and a table of content; see the IfLA document section 1. For papers such items need not be included; if you do, they should not be included in the word count.
+
+\item I expect that you are aware of and follow the university's plagiarism guidelines: \url{https://www.student.uni-stuttgart.de/pruefungsorganisation/document/Leitfaden_Plagiatspraevention_Studierende.pdf}. Term papers and theses should include, as specified in the IfLA document section 1, a signed copy of the plagiarism regulation. 
+
+\end{itemize}
+	
+\bibliographystyle{/Users/tonhauser.1/Library/Latex/cslipubs-natbib}
+\bibliography{/Users/tonhauser.1/Documents/bibliography}
+
+
+\end{document}
